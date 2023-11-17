@@ -15,7 +15,6 @@ import {
   Collapse,
   ScrollArea,
   rem,
-  useMantineTheme,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import {
@@ -67,7 +66,6 @@ export function HeaderMegaMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
-  const theme = useMantineTheme();
 
   const links = featureList.map((feature) => (
     <UnstyledButton className={classes.subLink} key={feature.title}>
@@ -91,7 +89,7 @@ export function HeaderMegaMenu() {
   ));
 
   return (
-    <Box pb={120}>
+    <Box pb={10}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <Logo />
