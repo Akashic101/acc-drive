@@ -28,7 +28,7 @@ export function HeroTitle() {
                 gradient={{ from: "green", to: "#85d46c" }}
               >
                 THE RACER'S TOOLKIT
-              </Text>{" "}
+              </Text>
               <br></br>
               <Text component="span" inherit>
                 FROM THE CREATORS OF ACC TV AND PYRACEENGINEER

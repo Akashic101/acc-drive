@@ -3,34 +3,42 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { MantineProvider } from "@mantine/core";
+import {
+  createTheme,
+  MantineColorsTuple,
+  MantineProvider,
+} from "@mantine/core";
+import { ModalsProvider } from "@mantine/modals";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
+const accDriveColors: MantineColorsTuple = [
+  "#effcea",
+  "#e3f2da",
+  "#c6e5b6",
+  "#a8d68f",
+  "#8dc96d",
+  "#7dc257",
+  "#74be4c",
+  "#62a73c",
+  "#559434",
+  "#468027",
+];
+
+const theme = createTheme({
+  colors: {
+    accDriveColors,
+  },
+});
+
 root.render(
   <React.StrictMode>
-    <MantineProvider
-      defaultColorScheme="dark"
-      theme={{
-        primaryColor: "acc-drive",
-        colors: {
-          "acc-drive": [
-            "#66ae3f",
-            "#66ae3f",
-            "#66ae3f",
-            "#66ae3f",
-            "#66ae3f",
-            "#66ae3f",
-            "#66ae3f",
-            "#66ae3f",
-            "#66ae3f",
-            "#66ae3f",
-          ],
-        },
-      }}
-    >
-      <App />
+    <MantineProvider defaultColorScheme="dark" theme={theme}>
+      <ModalsProvider>
+        <App />
+      </ModalsProvider>
     </MantineProvider>
   </React.StrictMode>
 );
