@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -9,6 +9,7 @@ import {
   MantineProvider,
 } from "@mantine/core";
 import { ModalsProvider } from "@mantine/modals";
+import "./i18n";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -37,7 +38,9 @@ root.render(
   <React.StrictMode>
     <MantineProvider defaultColorScheme="dark" theme={theme}>
       <ModalsProvider>
-        <App />
+        <Suspense fallback={<div>Loading...</div>}>
+          <App />
+        </Suspense>
       </ModalsProvider>
     </MantineProvider>
   </React.StrictMode>

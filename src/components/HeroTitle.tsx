@@ -12,9 +12,11 @@ import {
   IconCpu,
   IconRouteSquare,
 } from "@tabler/icons-react";
+import { Trans, useTranslation } from "react-i18next";
 import classes from "./HeroTitle.module.css";
 
 export function HeroTitle() {
+  const { t } = useTranslation("translations");
   return (
     <div className={classes.root}>
       <Container size="lg">
@@ -27,21 +29,16 @@ export function HeroTitle() {
                 variant="gradient"
                 gradient={{ from: "green", to: "#85d46c" }}
               >
-                THE RACER'S TOOLKIT
+                <Trans i18nKey="title.toolkit" />
               </Text>
               <br></br>
               <Text component="span" inherit>
-                FROM THE CREATORS OF ACC TV AND PYRACEENGINEER
+                <Trans i18nKey="title.creator" />
               </Text>
             </Title>
 
             <Text className={classes.description} mt={30}>
-              When your mirrors are filled with the competition, and your team
-              is depending on you to bring it home, the race should be your
-              focus. ACC DRIVE provides every tool that you need to keep you
-              immersed in the battle, and not off in the menus. It is a fully
-              featured toolkit that gives you and your team the cutting edge
-              needed to win races.
+              <Trans i18nKey="title.advertisement-text" />
             </Text>
             <Group>
               <Button
@@ -57,7 +54,7 @@ export function HeroTitle() {
                 Community
               </Button>
               <Button variant="default" size="lg" mt={40}>
-                Download/Buy
+                <Trans i18nKey="title.download-buy" />
               </Button>
             </Group>
           </div>
@@ -75,7 +72,7 @@ export function HeroTitle() {
             <ThemeIcon size="xl" variant="default">
               <IconBrandDiscord color={"#66ae3f"} />
             </ThemeIcon>
-            <Text>Join the community and talk with other drivers</Text>
+            <Trans i18nKey="title.community" />
           </Flex>
           <Flex
             mih={50}
@@ -89,7 +86,7 @@ export function HeroTitle() {
             <ThemeIcon size="xl" variant="default">
               <IconCpu color={"#66ae3f"} />
             </ThemeIcon>
-            <Text>Small, lightweight and no impact on FPS</Text>
+            <Trans i18nKey="title.performance" />
           </Flex>
           <Flex
             mih={50}
@@ -103,7 +100,7 @@ export function HeroTitle() {
             <ThemeIcon size="xl" variant="default">
               <IconRouteSquare color={"#66ae3f"} />
             </ThemeIcon>
-            <Text>Join the community and talk with other drivers</Text>
+            <Trans i18nKey="title.updates" />
           </Flex>
         </Group>
       </Container>

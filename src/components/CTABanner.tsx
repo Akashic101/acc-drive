@@ -12,8 +12,10 @@ import {
 } from "@mantine/core";
 import classes from "./CTABanner.module.css";
 import collage from "../media/drive-collage.png";
+import { Trans, useTranslation } from "react-i18next";
 
 export function CTABanner() {
+  const { t } = useTranslation("translations");
   return (
     <Container size="responsive">
       <Grid justify="space-between">
@@ -28,23 +30,22 @@ export function CTABanner() {
                     variant="gradient"
                     gradient={{ from: "green", to: "#85d46c" }}
                   >
-                    GET ACC DRIVE NOW!
+                    <Trans i18nKey="cta.title" />
                   </Text>{" "}
                   <br></br>
                 </Title>
                 <Text size="xl" fw={500}>
-                  Get your lifetime license for only 25€
+                  <Trans i18nKey="cta.costs" />
                 </Text>
                 <Text size="sm">
-                  Your ACC DRIVE-license will be linked to your Steam-Account.{" "}
+                  <Trans i18nKey="cta.changeLinkedAccount_1" />
                 </Text>
                 <Text size="sm">
-                  If you want to change the linked account you can contact us
-                  via Discord.
+                  <Trans i18nKey="cta.changeLinkedAccount_2" />
                 </Text>
                 <Space h={"lg"} />
                 <Button color={"#ffc438"} fullWidth>
-                  Checkout with Paypal
+                  <Trans i18nKey="cta.checkout" />
                 </Button>
               </Container>
             </Center>

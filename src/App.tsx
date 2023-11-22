@@ -5,19 +5,23 @@ import { HeroTitle } from "./components/HeroTitle";
 import { CTABanner } from "./components/CTABanner";
 import { Space } from "@mantine/core";
 import { FeatureCardList } from "./components/FeatureCardList";
+import { I18nextProvider } from "react-i18next";
+import i18n from "./i18n";
 
 function App() {
   return (
     <div className="App">
-      <HeaderMegaMenu />
-      <HeroTitle />
-      <Space h="xl" />
-      <CTABanner />
-      <Space h="xl" />
-      <Space h="xl" />
-      <Space h="xl" />
-      <Space h="xl" />
-      <FeatureCardList />
+      <I18nextProvider i18n={i18n}>
+        <HeaderMegaMenu />
+        <HeroTitle />
+        <Space h="xl" />
+        <CTABanner />
+        <Space h="xl" />
+        <Space h="xl" />
+        <Space h="xl" />
+        <Space h="xl" />
+        <FeatureCardList />
+      </I18nextProvider>
     </div>
   );
 }

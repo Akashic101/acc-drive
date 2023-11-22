@@ -27,6 +27,7 @@ import {
   IconUsers,
 } from "@tabler/icons-react";
 import classes from "./HeaderMegaMenu.module.css";
+import { LanguagePicker } from "./LanguagePicker";
 import Logo from "./Logo";
 
 const featureList = [
@@ -139,6 +140,7 @@ export function HeaderMegaMenu() {
           </Group>
 
           <Group visibleFrom="sm">
+            <LanguagePicker />
             <Button variant="default">Log in</Button>
             <Button>Sign up</Button>
           </Group>
