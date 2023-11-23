@@ -20,14 +20,14 @@ const data = [
   {
     image: "lawyers",
     title: "Fox",
-    subtitle: "Twitch Streamer",
+    subtitle: "E-Sports Racer",
     description:
       "Knowing where incidents happen and where yellow flags are is an amazing advantage when racing",
   },
   {
     image: "accountants",
     title: "Peach",
-    subtitle: "Twitch Streamer",
+    subtitle: "Community Member",
     description:
       "Knowing how my tyres are performing at all times gives me great security which in turn improves my performance",
   },

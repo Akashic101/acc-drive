@@ -10,6 +10,7 @@ import i18n from "./i18n";
 import { CTAVideoBanner } from "./components/CTAVideoBanner/CTAVideoBanner";
 import { CommunityReviews } from "./components/CommunityReviews/CommunityReviews";
 import { CTABannerSingle } from "./components/CTABannerSingle/CTABannerSingle";
+import { FooterLinks } from "./components/FooterLinks/FooterLinks";
 
 function App() {
   return (
@@ -35,10 +36,11 @@ function App() {
         <Space h="xl" />
         <Space h="xl" />
         <Space h="xl" />
-        <Space h="xl" />
-        <Space h="xl" />
         <CTABannerSingle />
+        <Space h="xl" />
+        <Space h="xl" />
       </I18nextProvider>
+      <FooterLinks />
     </div>
   );
 }
