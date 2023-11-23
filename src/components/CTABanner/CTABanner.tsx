@@ -3,13 +3,13 @@ import {
   Title,
   Text,
   Button,
-  AspectRatio,
+  Image,
   Center,
   SimpleGrid,
   Space,
 } from "@mantine/core";
 import classes from "./CTABanner.module.css";
-import collage from "../../media/drive-collage.png";
+import pitstop from "../../media/pitstop.gif";
 import { Trans, useTranslation } from "react-i18next";
 
 export function CTABanner() {
@@ -26,7 +26,7 @@ export function CTABanner() {
               gradient={{ from: "green", to: "#85d46c" }}
             >
               <Trans i18nKey="cta.main.title" />
-            </Text>{" "}
+            </Text>
             <br></br>
           </Title>
           <Text size="xl" fw={500}>
@@ -44,9 +44,7 @@ export function CTABanner() {
           </Button>
         </Container>
         <Center>
-          <AspectRatio ratio={1080 / 720} w={"90%"}>
-            <img src={collage} />
-          </AspectRatio>
+          <Image src={pitstop} h={"90%"} />
         </Center>
       </SimpleGrid>
     </Center>
