@@ -1,15 +1,10 @@
 @font-face {
-  font-family: "FranklinGothicBold";
-  src: local("FranklinGothicBold"),
-    url("../../fonts/Franklin_Gothic_Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-.franklin-gothic-bold {
-  font-family: "FranklinGothicBold", sans-serif;
+  font-family: "FranklingGothicBold";
+  src: local("FranklingGothicBold"),
+    url(../../fonts/Franklin_Gothic_Bold.ttf) format("truetype");
 }
 
 .logo {
   cursor: pointer;
+  font-family: "FranklingGothicBold";
 }

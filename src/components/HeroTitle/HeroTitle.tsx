@@ -23,8 +23,9 @@ import classes from "./HeroTitle.module.css";
 export function HeroTitle() {
   useEffect(() => {
     notifications.show({
+      id: "websiteStatus",
       title: "This website is in beta",
-      message: "Current version: 0.2. Last updated on 23.11.2023 at 22:00",
+      message: "Current version: 0.2.1. Last updated on 23.11.2023 at 22:40",
       color: "red",
       icon: <IconAlertTriangle size={"1rem"} />,
     });
