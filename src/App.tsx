@@ -16,19 +16,19 @@ function App() {
   return (
     <div className="App">
       <I18nextProvider i18n={i18n}>
-        <HeaderMegaMenu />
+        <HeaderMegaMenu/>
         <HeroTitle />
         <Space h="xl" />
         <CTABanner />
         <Space h="xl" />
         <Space h="xl" />
-        <Space h="xl" />
+        <Space h="xl" id="featureCardList"/>
         <Space h="xl" />
         <FeatureCardList />
         <Space h="xl" />
         <CTAVideoBanner />
         <Space h="xl" />
-        <Space h="xl" />
+        <Space h="xl" id="communityReviews"/>
         <Space h="xl" />
         <CommunityReviews />
         <Space h="xl" />

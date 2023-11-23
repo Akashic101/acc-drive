@@ -18,7 +18,7 @@ import classes from "./HeroTitle.module.css";
 export function HeroTitle() {
   const { t } = useTranslation("translations");
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="home">
       <Container size="lg">
         <div className={classes.inner}>
           <div className={classes.content}>
