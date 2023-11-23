@@ -73,5 +73,27 @@
       "description": "When setting up the App you can decide to always position ACC DRIVE in front to put it infront of all other applications",
       "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
     }
+  },
+  "reviews": {
+    "review1": {
+      "name": "Kaiser",
+      "role": "Twitch Streamer",
+      "review": "ACC DRIVE helped me perfecting my pitstops with amazing ease"
+    },
+    "review2": {
+      "name": "Fox",
+      "role": "E-Sports Driver",
+      "review": "Knowing where incidents happen and where yellow flags are is an amazing advantage when racing"
+    },
+    "review3": {
+      "name": "Peach",
+      "role": "Youtuber",
+      "review": "Knowing how my tyres are performing at all times gives me great security which in turn improves my performance"
+    },
+    "review4": {
+      "name": "Pixel",
+      "role": "Community Member",
+      "review": "The amazing community helped me out finding the perfect setup for my races"
+    }
   }
 }

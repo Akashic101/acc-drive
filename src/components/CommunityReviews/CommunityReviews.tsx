@@ -9,38 +9,38 @@ import {
 } from "@mantine/core";
 import classes from "./CommunityReviews.module.css";
 import face1 from "../../media/face_1.jpg";
-
-const data = [
-  {
-    image: { face1 },
-    title: "Kaiser",
-    subtitle: "Twitch Streamer",
-    description: "ACC DRIVE helped me perfecting my pitstops with amazing ease",
-  },
-  {
-    image: "lawyers",
-    title: "Fox",
-    subtitle: "E-Sports Racer",
-    description:
-      "Knowing where incidents happen and where yellow flags are is an amazing advantage when racing",
-  },
-  {
-    image: "accountants",
-    title: "Peach",
-    subtitle: "Community Member",
-    description:
-      "Knowing how my tyres are performing at all times gives me great security which in turn improves my performance",
-  },
-  {
-    image: "others",
-    title: "Pixel",
-    subtitle: "Twitch Streamer",
-    description:
-      "The amazing community helped me out finding the perfect setup for my races",
-  },
-];
+import I18n from "../../i18n.js";
+import { useTranslation } from "react-i18next";
 
 export function CommunityReviews() {
+  const { t } = useTranslation("translations");
+  const data = [
+    {
+      image: { face1 },
+      title: I18n.t("reviews.review1.name"),
+      subtitle: I18n.t("reviews.review1.role"),
+      description: I18n.t("reviews.review1.review"),
+    },
+    {
+      image: { face1 },
+      title: I18n.t("reviews.review2.name"),
+      subtitle: I18n.t("reviews.review2.role"),
+      description: I18n.t("reviews.review2.review"),
+    },
+    {
+      image: { face1 },
+      title: I18n.t("reviews.review3.name"),
+      subtitle: I18n.t("reviews.review3.role"),
+      description: I18n.t("reviews.review3.review"),
+    },
+    {
+      image: { face1 },
+      title: I18n.t("reviews.review4.name"),
+      subtitle: I18n.t("reviews.review4.role"),
+      description: I18n.t("reviews.review4.review"),
+    },
+  ];
+
   const items = data.map((item) => (
     <div className={classes.item}>
       <Image

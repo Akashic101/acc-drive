@@ -1,8 +1,8 @@
 import { Text, Container, ActionIcon, Group, rem, Space } from "@mantine/core";
 import {
-  IconBrandTwitter,
   IconBrandYoutube,
   IconBrandInstagram,
+  IconBrandDiscord,
 } from "@tabler/icons-react";
 import Logo from "../Logo/Logo";
 import classes from "./FooterLinks.module.css";
@@ -11,28 +11,28 @@ const data = [
   {
     title: "About",
     links: [
+      { label: "Home", link: "#" },
       { label: "Features", link: "#" },
       { label: "Pricing", link: "#" },
-      { label: "Support", link: "#" },
-      { label: "Forums", link: "#" },
+      { label: "Community", link: "#" },
     ],
   },
   {
-    title: "Project",
+    title: "Legal",
     links: [
-      { label: "Contribute", link: "#" },
-      { label: "Media assets", link: "#" },
-      { label: "Changelog", link: "#" },
-      { label: "Releases", link: "#" },
+      { label: "Mirecourtstr. 8" },
+      { label: "53225 Bonn" },
+      { label: "Niklas Krause" },
+      { label: "Discord: MrPig100" },
     ],
   },
   {
-    title: "Community",
+    title: "Impressum",
     links: [
-      { label: "Join Discord", link: "#" },
-      { label: "Follow on Twitter", link: "#" },
-      { label: "Email newsletter", link: "#" },
-      { label: "GitHub discussions", link: "#" },
+      { label: "Impressum", link: "#" },
+      { label: "Datenschutz (Website)", link: "#" },
+      { label: "Datenschutz (Application)", link: "#" },
+      { label: "Nutzungsbedigungen", link: "#" },
     ],
   },
 ];
@@ -40,13 +40,7 @@ const data = [
 export function FooterLinks() {
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
-      <Text<"a">
-        key={index}
-        className={classes.link}
-        component="a"
-        href={link.link}
-        onClick={(event) => event.preventDefault()}
-      >
+      <Text key={index} className={classes.link}>
         {link.label}
       </Text>
     ));
@@ -64,6 +58,7 @@ export function FooterLinks() {
       <Container className={classes.inner}>
         <div className={classes.logo}>
           <Logo />
+          <Space h={"lg"} />
           <Text size="xs" c="dimmed" className={classes.description}>
             Supercharge your driving
           </Text>
@@ -82,7 +77,7 @@ export function FooterLinks() {
           wrap="nowrap"
         >
           <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandTwitter
+            <IconBrandDiscord
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}
             />
