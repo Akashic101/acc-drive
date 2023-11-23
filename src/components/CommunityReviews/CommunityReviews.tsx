@@ -1,7 +1,6 @@
 import {
   Text,
   Container,
-  ThemeIcon,
   Title,
   SimpleGrid,
   Space,
@@ -9,6 +8,9 @@ import {
 } from "@mantine/core";
 import classes from "./CommunityReviews.module.css";
 import face1 from "../../media/face_1.jpg";
+import face2 from "../../media/face_2.jpg";
+import face3 from "../../media/face_3.jpg";
+import face4 from "../../media/face_4.jpg";
 import I18n from "../../i18n.js";
 import { useTranslation } from "react-i18next";
 
@@ -16,25 +18,25 @@ export function CommunityReviews() {
   const { t } = useTranslation("translations");
   const data = [
     {
-      image: { face1 },
+      image: face1,
       title: I18n.t("reviews.review1.name"),
       subtitle: I18n.t("reviews.review1.role"),
       description: I18n.t("reviews.review1.review"),
     },
     {
-      image: { face1 },
+      image: face2,
       title: I18n.t("reviews.review2.name"),
       subtitle: I18n.t("reviews.review2.role"),
       description: I18n.t("reviews.review2.review"),
     },
     {
-      image: { face1 },
+      image: face3,
       title: I18n.t("reviews.review3.name"),
       subtitle: I18n.t("reviews.review3.role"),
       description: I18n.t("reviews.review3.review"),
     },
     {
-      image: { face1 },
+      image: face4,
       title: I18n.t("reviews.review4.name"),
       subtitle: I18n.t("reviews.review4.role"),
       description: I18n.t("reviews.review4.review"),
@@ -48,7 +50,7 @@ export function CommunityReviews() {
         radius="xl"
         h={60}
         w={60}
-        src={face1}
+        src={item.image}
       ></Image>
       <div>
         <Text fw={700} fz="lg" className={classes.itemTitle}>
@@ -75,7 +77,6 @@ export function CommunityReviews() {
         {I18n.t("reviews.description.title.subtitle")}
         </Text>
       </Container>
-
       <SimpleGrid cols={{ base: 1, xs: 2 }} spacing={50} mt={30}>
         {items}
       </SimpleGrid>
