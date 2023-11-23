@@ -14,33 +14,34 @@ import {
 } from "@tabler/icons-react";
 import Logo from "../Logo/Logo";
 import classes from "./FooterLinks.module.css";
+import { Link } from "react-scroll";
 
 const data = [
   {
     title: "About",
     links: [
-      { label: "Home", link: "#" },
-      { label: "Features", link: "#" },
-      { label: "Pricing", link: "#" },
-      { label: "Community", link: "#" },
+      { label: "Home", id: "home" },
+      { label: "Features", id: "featureCardList" },
+      { label: "Pricing", id: "pricingCTA" },
+      { label: "Community", id: "communityReviews" },
     ],
   },
   {
     title: "Legal",
     links: [
-      { label: "Mirecourtstr. 8" },
-      { label: "53225 Bonn" },
-      { label: "Niklas Krause" },
-      { label: "Discord: MrPig100" },
+      { label: "Mirecourtstr. 8", id: "legalStuff" },
+      { label: "53225 Bonn", id: "legalStuff" },
+      { label: "Niklas Krause", id: "legalStuff" },
+      { label: "Discord: MrPig100", id: "legalStuff" },
     ],
   },
   {
     title: "Impressum",
     links: [
-      { label: "Impressum", link: "#" },
-      { label: "Datenschutz (Website)", link: "#" },
-      { label: "Datenschutz (Application)", link: "#" },
-      { label: "Nutzungsbedigungen", link: "#" },
+      { label: "Impressum", id: "#" },
+      { label: "Datenschutz (Website)", id: "#" },
+      { label: "Datenschutz (Application)", id: "#" },
+      { label: "Nutzungsbedigungen", id: "#" },
     ],
   },
 ];
@@ -48,13 +49,15 @@ const data = [
 export function FooterLinks() {
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
-      <Text
-        key={index}
-        className={classes.link}
-        td={group.title === "Impressum" ? "underline" : undefined}
-      >
-        {link.label}
-      </Text>
+      <Link to={link.id} offset={-50}>
+        <Text
+          key={index}
+          className={classes.link}
+          td={group.title === "Impressum" ? "underline" : undefined}
+        >
+          {link.label}
+        </Text>
+      </Link>
     ));
 
     return (

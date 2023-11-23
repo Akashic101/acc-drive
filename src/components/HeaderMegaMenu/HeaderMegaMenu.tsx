@@ -15,6 +15,7 @@ import {
   Collapse,
   ScrollArea,
   rem,
+  Space,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import {
@@ -29,6 +30,7 @@ import {
 import classes from "./HeaderMegaMenu.module.css";
 import { LanguagePicker } from "../LanguagePicker/LanguagePicker";
 import Logo from "../Logo/Logo";
+import { Link } from "react-scroll";
 
 const featureList = [
   {
@@ -106,9 +108,11 @@ export function HeaderMegaMenu() {
         <Group justify="space-between" h="100%">
           <Logo />
           <Group h="100%" gap={0} visibleFrom="sm">
-            <a href="#" className={classes.link}>
-              Home
-            </a>
+            <Link to="home">
+              <a href="home" className={classes.link}>
+                Home
+              </a>
+            </Link>
             <HoverCard
               width={600}
               position="bottom"
@@ -169,16 +173,12 @@ export function HeaderMegaMenu() {
         onClose={closeDrawer}
         size="100%"
         padding="md"
-        title="Navigation"
         hiddenFrom="sm"
         zIndex={1000000}
       >
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
-
-          <a href="#" className={classes.link}>
-            Home
-          </a>
+          <Link to="home">Home</Link>
           <UnstyledButton className={classes.link} onClick={toggleLinks}>
             <Center inline>
               <Box component="span" mr={5}>
@@ -187,20 +187,9 @@ export function HeaderMegaMenu() {
               <IconChevronDown style={{ width: rem(16), height: rem(16) }} />
             </Center>
           </UnstyledButton>
+          <Link to="communityReviews">Community</Link>
           <Collapse in={linksOpened}>{links}</Collapse>
-          <a href="#" className={classes.link}>
-            Learn
-          </a>
-          <a href="#" className={classes.link}>
-            Academy
-          </a>
-
-          <Divider my="sm" />
-
-          <Group justify="center" grow pb="xl" px="md">
-            <Button variant="default">Log in</Button>
-            <Button>Sign up</Button>
-          </Group>
+          <Divider my="sm" /> <LanguagePicker />
         </ScrollArea>
       </Drawer>
     </Box>
