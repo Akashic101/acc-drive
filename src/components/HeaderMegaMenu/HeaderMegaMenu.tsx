@@ -121,7 +121,7 @@ export function HeaderMegaMenu() {
               withinPortal
             >
               <HoverCard.Target>
-                <a href="#featureCardList" className={classes.link}>
+                <a href="#features" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
                       Features
@@ -137,7 +137,7 @@ export function HeaderMegaMenu() {
               <HoverCard.Dropdown style={{ overflow: "hidden" }}>
                 <Group justify="space-between" px="md">
                   <Text fw={500}>Features</Text>
-                  <Anchor href="#featureCardList" fz="xs">
+                  <Anchor href="#features" fz="xs">
                     View all
                   </Anchor>
                 </Group>
@@ -149,7 +149,7 @@ export function HeaderMegaMenu() {
                 </SimpleGrid>
               </HoverCard.Dropdown>
             </HoverCard>
-            <a href="#communityReviews" className={classes.link}>
+            <a href="#community" className={classes.link}>
               Community
             </a>
           </Group>
@@ -187,7 +187,7 @@ export function HeaderMegaMenu() {
               <IconChevronDown style={{ width: rem(16), height: rem(16) }} />
             </Center>
           </UnstyledButton>
-          <Link to="communityReviews">Community</Link>
+          <Link to="community">Community</Link>
           <Collapse in={linksOpened}>{links}</Collapse>
           <Divider my="sm" /> <LanguagePicker />
         </ScrollArea>

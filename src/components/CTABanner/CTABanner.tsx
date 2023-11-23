@@ -1,15 +1,12 @@
 import {
   Container,
-  Grid,
   Title,
   Text,
   Button,
-  Space,
-  Image,
   AspectRatio,
   Center,
-  Stack,
   SimpleGrid,
+  Space,
 } from "@mantine/core";
 import classes from "./CTABanner.module.css";
 import collage from "../../media/drive-collage.png";
@@ -41,6 +38,10 @@ export function CTABanner() {
           <Text size="sm">
             <Trans i18nKey="cta.main.changeLinkedAccount_2" />
           </Text>
+          <Space h={"lg"} />
+          <Button color={"#ffc438"} fullWidth>
+            <Trans i18nKey="cta.main.checkout" />
+          </Button>
         </Container>
         <Center>
           <AspectRatio ratio={1080 / 720} w={"90%"}>

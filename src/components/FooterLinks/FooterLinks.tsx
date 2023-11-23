@@ -21,9 +21,9 @@ const data = [
     title: "About",
     links: [
       { label: "Home", id: "home" },
-      { label: "Features", id: "featureCardList" },
-      { label: "Pricing", id: "pricingCTA" },
-      { label: "Community", id: "communityReviews" },
+      { label: "Features", id: "features" },
+      { label: "Pricing", id: "pricing" },
+      { label: "Community", id: "community" },
     ],
   },
   {

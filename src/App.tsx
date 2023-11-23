@@ -18,17 +18,17 @@ function App() {
       <I18nextProvider i18n={i18n}>
         <HeaderMegaMenu />
         <HeroTitle />
-        <Space h="xl" id="pricingCTA" />
+        <Space h="xl" id="pricing" />
         <CTABanner />
         <Space h="xl" />
         <Space h="xl" />
-        <Space h="xl" id="featureCardList" />
+        <Space h="xl" id="features" />
         <Space h="xl" />
         <FeatureCardList />
         <Space h="xl" />
         <CTAVideoBanner />
         <Space h="xl" />
-        <Space h="xl" id="communityReviews" />
+        <Space h="xl" id="community" />
         <Space h="xl" />
         <CommunityReviews />
         <Space h="xl" />
