@@ -67,6 +67,14 @@
     }
   },
   "reviews": {
+    "description": {
+      "title": {
+        "one": "ACC DRIVER ist perfekt für ",
+        "divider": "alle",
+        "two": "Fahrer",
+        "subtitle": "Egal, ob du ein Anfänger oder ein Profi bist, ACC DRIVE wird dein Rennen auf die nächste Stufe heben. Höre von unserer fantastischen Community, wie ACC DRIVE ihnen geholfen hat, ihr Fahrverhalten zu verbessern."
+      }
+    },
     "review1": {
       "name": "Kaiser",
       "role": "Twitch Streamer",

@@ -66,15 +66,13 @@ export function CommunityReviews() {
   return (
     <Container size={700} className={classes.wrapper}>
       <Title className={classes.title} order={2}>
-        ACC DRIVE is perfect for <span className={classes.highlight}>all</span>{" "}
-        drivers
+      {I18n.t("reviews.description.title.one")}<span className={classes.highlight}>{I18n.t("reviews.description.title.divider")}</span>
+      {I18n.t("reviews.description.title.two")}
       </Title>
 
       <Container size={660} p={0}>
         <Text c="dimmed" className={classes.description}>
-          Whether you are a beginnner or a pro, ACC DRIVE will push your racing
-          to the next level. Hear from our amazing community how ACC DRIVE
-          helped and improve their driving
+        {I18n.t("reviews.description.title.subtitle")}
         </Text>
       </Container>
 
