@@ -13,8 +13,10 @@ import { FeatureCard } from "../FeatureCard/FeatureCard";
 import classes from "./FeatureCardList.module.css";
 import accDrive1 from "../../media/acc_1.jpg";
 import I18n from "../../i18n.js";
+import { useTranslation } from "react-i18next";
 
 export function FeatureCardList() {
+  const { t } = useTranslation("translations");
   return (
     <Container fluid>
       <Group className={classes.featureCardGroup} justify="space-between">

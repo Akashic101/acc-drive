@@ -90,17 +90,7 @@ export function HeaderMegaMenu() {
   ));
 
   return (
-    <Box
-      pb={10}
-      style={{
-        backgroundColor: "#1a1b1e",
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 1000,
-      }}
-    >
+    <Box pb={10}>
       <header
         className={classes.header}
         style={{
@@ -109,6 +99,7 @@ export function HeaderMegaMenu() {
           top: 0,
           left: 0,
           right: 0,
+          height: "60px",
           zIndex: 1000,
         }}
       >

@@ -1,4 +1,12 @@
-import { Text, Container, ActionIcon, Group, rem, Space } from "@mantine/core";
+import {
+  Text,
+  Container,
+  ActionIcon,
+  Group,
+  rem,
+  Space,
+  Center,
+} from "@mantine/core";
 import {
   IconBrandYoutube,
   IconBrandInstagram,
@@ -40,7 +48,11 @@ const data = [
 export function FooterLinks() {
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
-      <Text key={index} className={classes.link} td={group.title === "Impressum" ? "underline" : undefined}>
+      <Text
+        key={index}
+        className={classes.link}
+        td={group.title === "Impressum" ? "underline" : undefined}
+      >
         {link.label}
       </Text>
     ));
@@ -54,48 +66,50 @@ export function FooterLinks() {
   });
 
   return (
-    <footer className={classes.footer}>
-      <Container className={classes.inner}>
-        <div className={classes.logo}>
-          <Logo />
-          <Space h={"lg"} />
-          <Text size="xs" c="dimmed" className={classes.description}>
-            Supercharge your driving
+    <Center>
+      <footer className={classes.footer}>
+        <Container className={classes.inner}>
+          <div className={classes.logo}>
+            <Logo />
+            <Space h={"lg"} />
+            <Text size="xs" c="dimmed" className={classes.description}>
+              Supercharge your driving
+            </Text>
+          </div>
+          <div className={classes.groups}>{groups}</div>
+        </Container>
+        <Container className={classes.afterFooter}>
+          <Text c="dimmed" size="sm">
+            © 2023 ACC DRIVE. All rights reserved.
           </Text>
-        </div>
-        <div className={classes.groups}>{groups}</div>
-      </Container>
-      <Container className={classes.afterFooter}>
-        <Text c="dimmed" size="sm">
-          © 2023 ACC DRIVE. All rights reserved.
-        </Text>
 
-        <Group
-          gap={0}
-          className={classes.social}
-          justify="flex-end"
-          wrap="nowrap"
-        >
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandDiscord
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandYoutube
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandInstagram
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-        </Group>
-      </Container>
-    </footer>
+          <Group
+            gap={0}
+            className={classes.social}
+            justify="flex-end"
+            wrap="nowrap"
+          >
+            <ActionIcon size="lg" color="gray" variant="subtle">
+              <IconBrandDiscord
+                style={{ width: rem(18), height: rem(18) }}
+                stroke={1.5}
+              />
+            </ActionIcon>
+            <ActionIcon size="lg" color="gray" variant="subtle">
+              <IconBrandYoutube
+                style={{ width: rem(18), height: rem(18) }}
+                stroke={1.5}
+              />
+            </ActionIcon>
+            <ActionIcon size="lg" color="gray" variant="subtle">
+              <IconBrandInstagram
+                style={{ width: rem(18), height: rem(18) }}
+                stroke={1.5}
+              />
+            </ActionIcon>
+          </Group>
+        </Container>
+      </footer>
+    </Center>
   );
 }

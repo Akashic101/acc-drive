@@ -68,13 +68,16 @@ export function CommunityReviews() {
   return (
     <Container size={700} className={classes.wrapper}>
       <Title className={classes.title} order={2}>
-      {I18n.t("reviews.description.title.one")}<span className={classes.highlight}>{I18n.t("reviews.description.title.divider")}</span>
-      {I18n.t("reviews.description.title.two")}
+        {I18n.t("reviews.description.title.one")}
+        <span className={classes.highlight}>
+          {I18n.t("reviews.description.title.divider")}
+        </span>
+        {I18n.t("reviews.description.title.two")}
       </Title>
 
       <Container size={660} p={0}>
         <Text c="dimmed" className={classes.description}>
-        {I18n.t("reviews.description.title.subtitle")}
+          {I18n.t("reviews.description.title.subtitle")}
         </Text>
       </Container>
       <SimpleGrid cols={{ base: 1, xs: 2 }} spacing={50} mt={30}>

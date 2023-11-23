@@ -11,8 +11,7 @@
 }
 
 .logo {
-  max-width: rem(200px);
-
+  padding-right: 5rem;
   @media (max-width: $mantine-breakpoint-sm) {
     display: flex;
     flex-direction: column;
@@ -49,7 +48,7 @@
 }
 
 .wrapper {
-  padding-right: 3rem;
+  padding-right: 5rem;
 }
 
 .link {
