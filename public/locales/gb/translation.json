@@ -1,4 +1,7 @@
 {
+  "general": {
+    "learnMore": "Learn more"
+  },
   "title": {
     "toolkit": "THE RACER'S TOOLKIT",
     "creator": "FROM THE CREATORS OF ACC TV AND PYRACEENGINEER",
@@ -14,5 +17,47 @@
     "changeLinkedAccount_1": "Your ACC DRIVE-license will be linked to your Steam-Account.",
     "changeLinkedAccount_2": "If you want to change the linked account you can contact us via Discord.",
     "checkout": "Checkout with Paypal"
+  },
+  "features": {
+    "feature1": {
+      "title": "Race Engineer",
+      "subtitle": "The most important data at hand",
+      "description": "The Race Engineer helps you get the right fuel and PSI into your car by looking at your data. Basically like the Session Info Page but local-only"
+    },
+    "feature2": {
+      "title": "Telemetry",
+      "subtitle": "Additional Info on your past sessions",
+      "description": "Revel in detailed lap specifics such as time, top- and average-speed, with the additional bonus of TC/ABS intervention stats. Stay on top of your game with active assists and overall stint details showcasing your best lap"
+    },
+    "feature3": {
+      "title": "Spotting",
+      "subtitle": "Sharing and recieving your best laps to help each other out",
+      "description": "The Spotting page gives you an easier time keeping an overview of the race. You can see everyone's last and fastest times, how often they pitted, who is currently driving and more"
+    },
+    "feature4": {
+      "title": "Community",
+      "subtitle": "For a better overview of the race",
+      "description": "Aside from adding each other as friends via ACC DRIVE, comparing yourself to faster times within the community is now possible as well! After completing a valid lap, your telemetry data is uploaded to our secure server."
+    },
+    "feature5": {
+      "title": "Radar",
+      "subtitle": "Perfect for close racing",
+      "description": "Shows the position of other cars around you. Can be customized for the distance ahead, behind and next to you."
+    },
+    "feature6": {
+      "title": "Yellow Flags",
+      "subtitle": "The most important data at hand",
+      "description": "This is an improvement over the in-game yellow flag system. It adds the distance to an accident, the position and rotation of the crashed car into one system that warns you efficiently before the game does"
+    },
+    "feature7": {
+      "title": "Full Tyre & Damage App",
+      "subtitle": "All the data about your car you will need",
+      "description": "This feature shows you the actual values based on the performance of your tires/brakes instead of some random values Kunos is presenting. It also features a damage-model when you take damage"
+    },
+    "feature8": {
+      "title": "VR Support",
+      "subtitle": "ACC DRIVE fully works in VR",
+      "description": "When setting up the App you can decide to always position ACC DRIVE in front to put it infront of all other applications"
+    }
   }
 }

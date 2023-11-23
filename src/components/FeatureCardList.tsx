@@ -12,66 +12,67 @@ import {
 import { FeatureCard } from "./FeatureCard";
 import classes from "./FeatureCardList.module.css";
 import accDrive1 from "../media/acc_1.jpg";
+import I18n from "../i18n.js";
 
 export function FeatureCardList() {
   return (
     <Container fluid>
       <Group className={classes.featureCardGroup} justify="space-between">
         <FeatureCard
-          featureName="Race Engineer"
-          featureText="The most important data at hand"
-          longText="The Race Engineer helps you get the right fuel and PSI into your car by looking at your data. Basically like the Session Info Page but local-only"
+          featureName={I18n.t("features.feature1.title")}
+          featureText={I18n.t("features.feature1.subtitle")}
+          longText={I18n.t("features.feature1.description")}
           icon={<IconHeadset size="50" color={"#66ae3f"} />}
           image={accDrive1}
         />
         <FeatureCard
-          featureName="Telemetry"
-          featureText="Additional Info on your past sessions"
-          longText="Revel in detailed lap specifics such as time, top- and average-speed, with the additional bonus of TC/ABS intervention stats. Stay on top of your game with active assists and overall stint details showcasing your best lap"
+          featureName={I18n.t("features.feature2.title")}
+          featureText={I18n.t("features.feature2.subtitle")}
+          longText={I18n.t("features.feature2.description")}
           icon={<IconFileSpreadsheet size="50" color={"#66ae3f"} />}
           image={accDrive1}
         />
         <FeatureCard
-          featureName="Spotting"
-          featureText="For a better overview of the race"
-          longText="The Spotting page gives you an easier time keeping an overview of the race. You can see everyone's last and fastest times, how often they pitted, who is currently driving and more"
+          featureName={I18n.t("features.feature3.title")}
+          featureText={I18n.t("features.feature3.subtitle")}
+          longText={I18n.t("features.feature3.description")}
           icon={<IconEyeExclamation size="50" color={"#66ae3f"} />}
           image={accDrive1}
         />
         <FeatureCard
-          featureName="Community"
-          featureText="Sharing and recieving your best laps to help each other out"
-          longText="Asode from adding each other as friends via ACC DRIVE, comparing yourself to faster times within the community is now possible as well! After completing a valid lap, your telemetry data is uploaded to our secure server."
+          featureName={I18n.t("features.feature4.title")}
+          featureText={I18n.t("features.feature4.subtitle")}
+          longText={I18n.t("features.feature4.description")}
           icon={<IconTournament size="50" color={"#66ae3f"} />}
           image={accDrive1}
         />
       </Group>
       <Group className={classes.featureCardGroup} justify="space-between">
         <FeatureCard
-          featureName="Radar"
-          featureText="Perfect for close racing"
-          longText="Shows the position of other cars around you. Can be customized for the distance ahead, behind and next to you."
+          featureName={I18n.t("features.feature5.title")}
+          featureText={I18n.t("features.feature5.subtitle")}
+          longText={I18n.t("features.feature5.description")}
           icon={<IconRadar size="50" color={"#66ae3f"} />}
           image={accDrive1}
         />
         <FeatureCard
-          featureName="Yellow Flags"
-          featureText="The most important data at hand"
-          longText="This is an improvement over the in-game yellow flag system. It adds the distance to an accident, the position and rotation of the crashed car into one system that warns you efficiently before the game does."
+          featureName={I18n.t("features.feature6.title")}
+          featureText={I18n.t("features.feature6.subtitle")}
+          longText={I18n.t("features.feature6.description")}
           icon={<IconFlagExclamation size="50" color={"#66ae3f"} />}
           image={accDrive1}
         />
         <FeatureCard
-          featureName="Full Tyre & Damage App"
-          featureText="All the data about your car you will need"
-          longText="This feature shows you the actual values based on the performance of your tires/brakes instead of some random values Kunos is presenting. It also features a damage-model when you take damage."
+          featureName={I18n.t("features.feature7.title")}
+          featureText={I18n.t("features.feature7.subtitle")}
+          longText={I18n.t("features.feature7.description")}
           icon={<IconAppWindow size="50" color={"#66ae3f"} />}
           image={accDrive1}
         />
         <FeatureCard
-          featureName="VR Support"
-          featureText="ACC DRIVE fully works in VR"
-          longText="When setting up the App you can decide to always position ACC DRIVE in front to put it infront of all other applications."
+          featureName={I18n.t("features.feature8.title")}
+          featureText={I18n.t("features.feature8.subtitle")}
+          longText={I18n.t("features.feature8.description")}
           icon={<IconBadgeVr size="50" color={"#66ae3f"} />}
           image={accDrive1}
         />

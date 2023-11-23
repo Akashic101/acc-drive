@@ -10,6 +10,7 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { ReactNode } from "react";
 import classes from "./FeatureCard.module.css";
+import I18n from "../i18n.js";
 
 interface FeatureCardProps {
   featureName: string;
@@ -71,7 +72,7 @@ export function FeatureCard({
           color={"#66ae3f"}
           onClick={open}
         >
-          Learn more
+          {I18n.t("general.learnMore")}
         </Button>
       </Card>
     </>

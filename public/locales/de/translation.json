@@ -1,4 +1,7 @@
 {
+  "general": {
+    "learnMore": "Mehr erfahren"
+  },
   "title": {
     "toolkit": "THE RACER'S TOOLKIT",
     "creator": "VON DEN MACHERN VON ACC TV UND PYRACEENGINEER",
@@ -14,5 +17,47 @@
     "changeLinkedAccount_1": "Deine ACC DRIVE-Lizenz wird mit deinem Steam-Account verknüpft.",
     "changeLinkedAccount_2": "Wenn du den verknüpften Account ändern möchtest, kannst du uns über Discord kontaktieren.",
     "checkout": "Checkout mit Paypal"
+  },
+  "features": {
+    "feature1": {
+      "title": "Renningenieur",
+      "subtitle": "Die wichtigsten Daten zur Hand",
+      "description": "Der Race Engineer hilft dir, den richtigen Kraftstoff und Druck in deinem Auto zu finden, indem er sich deine Daten ansieht. Im Grunde wie die Session Info Page, aber nur lokal."
+    },
+    "feature2": {
+      "title": "Telemetrie",
+      "subtitle": "Zusätzliche Informationen über Ihre vergangenen Sitzungen",
+      "description": "Erfreuen Sie sich an detaillierten Rundenangaben wie Zeit, Höchst- und Durchschnittsgeschwindigkeit, mit dem zusätzlichen Bonus von TC/ABS-Eingriffsstatistiken. Bleiben Sie an der Spitze Ihres Spiels mit aktiven Assistenten und Details zu Ihrem gesamten Stint, die Ihre beste Runde zeigen."
+    },
+    "feature3": {
+      "title": "Spotting",
+      "subtitle": "Teilen und empfangen Sie Ihre besten Runden, um sich gegenseitig zu helfen",
+      "description": "Die Spotting-Seite macht es dir leichter, den Überblick über das Rennen zu behalten. Du kannst die letzten und schnellsten Zeiten aller Teilnehmer sehen, wie oft sie an der Box waren, wer gerade fährt und mehr."
+    },
+    "feature4": {
+      "title": "Community",
+      "subtitle": "Für einen besseren Überblick über das Rennen",
+      "description": "Neben dem Hinzufügen von Freunden über ACC DRIVE ist es jetzt auch möglich, sich mit schnelleren Zeiten innerhalb der Community zu vergleichen! Nachdem Sie eine gültige Runde absolviert haben, werden Ihre Telemetriedaten auf unseren sicheren Server hochgeladen."
+    },
+    "feature5": {
+      "title": "Radar",
+      "subtitle": "Perfekt für enge Rennen",
+      "description": "Zeigt die Position der anderen Fahrzeuge um Sie herum an. Kann für den Abstand vor, hinter und neben Ihnen angepasst werden."
+    },
+    "feature6": {
+      "title": "Gelbe Flaggen",
+      "subtitle": "Die wichtigsten Daten, die zur Verfügung stehen",
+      "description": "Dies ist eine Verbesserung des gelben Flaggensystems im Spiel. Es fügt die Entfernung zu einem Unfall, die Position und die Drehung des verunglückten Autos zu einem System zusammen, das Sie effizient warnt, bevor es das Spiel tut."
+    },
+    "feature7": {
+      "title": "Full Tyre & Damage App",
+      "subtitle": "Alle Daten über Ihr Auto, die Sie benötigen",
+      "description": "Diese Funktion zeigt Ihnen die tatsächlichen Werte, die auf der Leistung Ihrer Reifen/Bremsen basieren, anstatt irgendwelcher zufälliger Werte, die Kunos präsentiert. Es zeigt auch ein Schadensmodell an, wenn du Schaden nimmst"
+    },
+    "feature8": {
+      "title": "VR-Unterstützung",
+      "subtitle": "ACC DRIVE funktioniert vollständig in VR",
+      "description": "Beim Einrichten der App können Sie festlegen, dass ACC DRIVE immer vor allen anderen Anwendungen positioniert wird"
+    }
   }
 }
