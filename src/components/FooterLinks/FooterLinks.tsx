@@ -40,7 +40,7 @@ const data = [
 export function FooterLinks() {
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
-      <Text key={index} className={classes.link}>
+      <Text key={index} className={classes.link} td={group.title === "Impressum" ? "underline" : undefined}>
         {link.label}
       </Text>
     ));
