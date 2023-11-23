@@ -8,6 +8,7 @@ import {
   Modal,
   Space,
   Title,
+  Container,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { ReactNode } from "react";
@@ -48,6 +49,17 @@ export function FeatureCard({
         <Divider />
         <Space h="md" />
         <Text>{modalText}</Text>
+        <Divider />
+        <Button
+          className={classes.button}
+          color={"#85d46c"}
+          variant="outline"
+          onClick={() => {
+            close();
+          }}
+        >
+          {I18n.t("general.close")}
+        </Button>
       </Modal>
       <Card
         w={"20%"}
@@ -68,16 +80,20 @@ export function FeatureCard({
         >
           {icon}
         </Avatar>
-        <Text ta="center" fz="lg" fw={500} mt="sm">
-          {featureName}
-        </Text>
-        <Text ta="center" fz="sm" c="dimmed">
-          {featureText}
-        </Text>
-        <Divider my="sm" />
-        <Text ta="center" fz="sm" c="dimmed">
-          {longText}
-        </Text>
+        <Card.Section h={240}>
+          <Text ta="center" fz="lg" fw={500} mt="sm">
+            {featureName}
+          </Text>
+          <Text ta="center" fz="sm" c="dimmed">
+            {featureText}
+          </Text>
+          <Divider my="sm" />
+          <Container w={"90%"}>
+            <Text ta="center" fz="sm" c="dimmed">
+              {longText}
+            </Text>
+          </Container>
+        </Card.Section>
         <Button
           fullWidth
           radius="md"

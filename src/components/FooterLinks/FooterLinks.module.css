@@ -52,15 +52,21 @@
 }
 
 .link {
+  cursor: pointer;
   display: block;
   color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-1));
   font-size: var(--mantine-font-size-sm);
   padding-top: rem(3px);
   padding-bottom: rem(3px);
+}
 
-  &:hover {
-    text-decoration: underline;
-  }
+.nonLink {
+  display: block;
+}
+
+.nonLink:hover {
+  text-decoration: none;
+  cursor: default;
 }
 
 .title {

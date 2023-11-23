@@ -9,3 +9,7 @@
 .franklin-gothic-bold {
   font-family: "FranklinGothicBold", sans-serif;
 }
+
+.logo {
+  cursor: pointer;
+}

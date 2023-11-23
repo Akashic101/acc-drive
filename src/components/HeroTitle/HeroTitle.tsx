@@ -6,13 +6,16 @@ import {
   Group,
   Flex,
   ThemeIcon,
+  CheckIcon,
 } from "@mantine/core";
+import { notifications } from "@mantine/notifications";
 import {
   IconBrandDiscord,
   IconCpu,
   IconRouteSquare,
 } from "@tabler/icons-react";
 import { Trans, useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
 import classes from "./HeroTitle.module.css";
 
 export function HeroTitle() {
@@ -41,19 +44,31 @@ export function HeroTitle() {
               <Trans i18nKey="title.advertisement-text" />
             </Text>
             <Group>
+              <Link to={"features"}>
+                <Button variant="default" size="lg" mt={40}>
+                  Features
+                </Button>
+              </Link>
+              <Link to={"community"}>
+                <Button variant="default" size="lg" mt={40}>
+                  Community
+                </Button>
+              </Link>
               <Button
                 variant="gradient"
                 gradient={{ from: "green", to: "#66ae3f" }}
                 size="lg"
                 className={classes.control}
                 mt={40}
+                onClick={() =>
+                  notifications.show({
+                    title: "Feature not implemented",
+                    message: "You would be send to Paypal to buy ACC DRIVE",
+                    color: "teal",
+                    icon: <CheckIcon />,
+                  })
+                }
               >
-                Features
-              </Button>
-              <Button variant="default" size="lg" mt={40}>
-                Community
-              </Button>
-              <Button variant="default" size="lg" mt={40}>
                 <Trans i18nKey="title.download-buy" />
               </Button>
             </Group>

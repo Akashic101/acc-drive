@@ -6,6 +6,7 @@ import {
   rem,
   Space,
   Center,
+  Anchor,
 } from "@mantine/core";
 import {
   IconBrandYoutube,
@@ -29,18 +30,21 @@ const data = [
   {
     title: "Legal",
     links: [
-      { label: "Mirecourtstr. 8", id: "legalStuff" },
-      { label: "53225 Bonn", id: "legalStuff" },
-      { label: "Niklas Krause", id: "legalStuff" },
-      { label: "Discord: MrPig100", id: "legalStuff" },
+      { label: "Mirecourtstr. 8", id: "#" },
+      { label: "53225 Bonn", id: "#" },
+      { label: "Niklas Krause", id: "#" },
+      { label: "Discord: MrPig100", id: "#" },
     ],
   },
   {
     title: "Impressum",
     links: [
-      { label: "Impressum", id: "#" },
-      { label: "Datenschutz (Website)", id: "#" },
-      { label: "Datenschutz (Application)", id: "#" },
+      { label: "Impressum", id: "https://accdrive.com/impressum" },
+      { label: "Datenschutz (Website)", id: "https://accdrive.com/privacy" },
+      {
+        label: "Datenschutz (Application)",
+        id: "https://accdrive.com/privacy",
+      },
       { label: "Nutzungsbedigungen", id: "#" },
     ],
   },
@@ -48,17 +52,39 @@ const data = [
 
 export function FooterLinks() {
   const groups = data.map((group) => {
-    const links = group.links.map((link, index) => (
-      <Link to={link.id} offset={-50}>
-        <Text
-          key={index}
-          className={classes.link}
-          td={group.title === "Impressum" ? "underline" : undefined}
-        >
-          {link.label}
-        </Text>
-      </Link>
-    ));
+    const links = group.links.map((link, index) => {
+      let linkElement;
+
+      if (group.title === "About") {
+        linkElement = (
+          <Link key={index} to={link.id} className={classes.link}>
+            <Text>{link.label}</Text>
+          </Link>
+        );
+      } else if (group.title === "Impressum") {
+        linkElement = (
+          <Anchor
+            key={index}
+            href={link.id}
+            className={`${classes.link}`}
+            style={{
+              textDecoration:
+                group.title === "Impressum" ? "underline" : "none",
+            }}
+          >
+            {link.label}
+          </Anchor>
+        );
+      } else {
+        linkElement = (
+          <Text key={index} className={classes.nonLink}>
+            {link.label}
+          </Text>
+        );
+      }
+
+      return linkElement;
+    });
 
     return (
       <div className={classes.wrapper} key={group.title}>

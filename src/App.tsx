@@ -34,8 +34,6 @@ function App() {
         <Space h="xl" />
         <Space h="xl" />
         <Space h="xl" />
-        <Space h="xl" />
-        <Space h="xl" />
         <CTABannerSingle />
         <Space h="xl" />
         <Space h="xl" />

@@ -106,7 +106,9 @@ export function HeaderMegaMenu() {
         }}
       >
         <Group justify="space-between" h="100%">
-          <Logo />
+          <Link to={"home"}>
+            <Logo />
+          </Link>
           <Group h="100%" gap={0} visibleFrom="sm">
             <Link to="home">
               <a href="home" className={classes.link}>
