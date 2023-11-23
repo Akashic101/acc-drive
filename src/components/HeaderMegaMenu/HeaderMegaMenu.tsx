@@ -27,8 +27,8 @@ import {
   IconUsers,
 } from "@tabler/icons-react";
 import classes from "./HeaderMegaMenu.module.css";
-import { LanguagePicker } from "./LanguagePicker";
-import Logo from "./Logo";
+import { LanguagePicker } from "../LanguagePicker/LanguagePicker";
+import Logo from "../Logo/Logo";
 
 const featureList = [
   {

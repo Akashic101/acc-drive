@@ -1,13 +1,15 @@
 import "./App.css";
 import "@mantine/core/styles.css";
-import { HeaderMegaMenu } from "./components/HeaderMegaMenu";
-import { HeroTitle } from "./components/HeroTitle";
-import { CTABanner } from "./components/CTABanner";
+import { HeaderMegaMenu } from "./components/HeaderMegaMenu/HeaderMegaMenu";
+import { HeroTitle } from "./components/HeroTitle/HeroTitle";
+import { CTABanner } from "./components/CTABanner/CTABanner";
 import { Space } from "@mantine/core";
-import { FeatureCardList } from "./components/FeatureCardList";
+import { FeatureCardList } from "./components/FeatureCardList/FeatureCardList";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
-import { CTAVideoBanner } from "./components/CTAVideoBanner";
+import { CTAVideoBanner } from "./components/CTAVideoBanner/CTAVideoBanner";
+import { CommunityReviews } from "./components/CommunityReviews/CommunityReviews";
+import { CTABannerSingle } from "./components/CTABannerSingle/CTABannerSingle";
 
 function App() {
   return (
@@ -22,7 +24,20 @@ function App() {
         <Space h="xl" />
         <Space h="xl" />
         <FeatureCardList />
+        <Space h="xl" />
         <CTAVideoBanner />
+        <Space h="xl" />
+        <Space h="xl" />
+        <Space h="xl" />
+        <CommunityReviews />
+        <Space h="xl" />
+        <Space h="xl" />
+        <Space h="xl" />
+        <Space h="xl" />
+        <Space h="xl" />
+        <Space h="xl" />
+        <Space h="xl" />
+        <CTABannerSingle />
       </I18nextProvider>
     </div>
   );

@@ -12,8 +12,8 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { ReactNode } from "react";
 import classes from "./FeatureCard.module.css";
-import I18n from "../i18n.js";
-import accdrive1 from "../media/acc_1.jpg";
+import I18n from "../../i18n.js";
+import accdrive1 from "../../media/acc_1.jpg";
 
 interface FeatureCardProps {
   featureName: string;

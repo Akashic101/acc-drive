@@ -1,5 +1,5 @@
 import { Group, Title, Image } from "@mantine/core";
-import logo from "../media/drive-logo.png";
+import logo from "../../media/drive-logo.png";
 
 import styles from "./Logo.module.css";
 

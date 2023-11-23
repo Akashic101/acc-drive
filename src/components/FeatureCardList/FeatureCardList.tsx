@@ -9,10 +9,10 @@ import {
   IconRadar,
   IconTournament,
 } from "@tabler/icons-react";
-import { FeatureCard } from "./FeatureCard";
+import { FeatureCard } from "../FeatureCard/FeatureCard";
 import classes from "./FeatureCardList.module.css";
-import accDrive1 from "../media/acc_1.jpg";
-import I18n from "../i18n.js";
+import accDrive1 from "../../media/acc_1.jpg";
+import I18n from "../../i18n.js";
 
 export function FeatureCardList() {
   return (
