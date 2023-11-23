@@ -7,6 +7,7 @@ import {
   Space,
   Center,
   Anchor,
+  SimpleGrid,
 } from "@mantine/core";
 import {
   IconBrandYoutube,
@@ -97,16 +98,21 @@ export function FooterLinks() {
   return (
     <Center>
       <footer className={classes.footer}>
-        <Container className={classes.inner}>
-          <div className={classes.logo}>
-            <Logo />
-            <Space h={"lg"} />
-            <Text size="xs" c="dimmed" className={classes.description}>
-              Supercharge your driving
-            </Text>
-          </div>
-          <div className={classes.groups}>{groups}</div>
-        </Container>
+        <SimpleGrid cols={{ base: 1, sm: 2, lg: 2 }} spacing={50} mt={30}>
+          <Container className={classes.inner}>
+            <div className={classes.logo}>
+              <Logo />
+              <Space h={"lg"} />
+              <Text size="xs" c="dimmed" className={classes.description}>
+                Supercharge your driving
+              </Text>
+            </div>
+          </Container>
+          <Container>
+            <SimpleGrid cols={{ base: 1, sm: 3, lg: 3 }}>{groups}</SimpleGrid>
+          </Container>
+        </SimpleGrid>
+
         <Container className={classes.afterFooter}>
           <Text c="dimmed" size="sm">
             © 2023 ACC DRIVE. All rights reserved.
