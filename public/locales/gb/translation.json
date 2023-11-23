@@ -12,52 +12,66 @@
     "updates": "Constant improvements and new features"
   },
   "cta": {
-    "title": "GET ACC DRIVE NOW!",
-    "costs": "Get your lifetime license for only 25€",
-    "changeLinkedAccount_1": "Your ACC DRIVE-license will be linked to your Steam-Account.",
-    "changeLinkedAccount_2": "If you want to change the linked account you can contact us via Discord.",
-    "checkout": "Checkout with Paypal"
+    "main": {
+      "title": "GET ACC DRIVE NOW!",
+      "costs": "Get your lifetime license for only 25€",
+      "changeLinkedAccount_1": "Your ACC DRIVE-license will be linked to your Steam-Account.",
+      "changeLinkedAccount_2": "If you want to change the linked account you can contact us via Discord.",
+      "checkout": "Checkout with Paypal"
+    },
+    "video": {
+      "title": "See ACC DRIVE in action!",
+      "subtitle": "Get a quick look at some gameplay showing the key features of ACC DRIVE"
+    }
   },
   "features": {
     "feature1": {
       "title": "Race Engineer",
       "subtitle": "The most important data at hand",
-      "description": "The Race Engineer helps you get the right fuel and PSI into your car by looking at your data. Basically like the Session Info Page but local-only"
+      "description": "The Race Engineer helps you get the right fuel and PSI into your car by looking at your data. Basically like the Session Info Page but local-only",
+      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
     },
     "feature2": {
       "title": "Telemetry",
       "subtitle": "Additional Info on your past sessions",
-      "description": "Revel in detailed lap specifics such as time, top- and average-speed, with the additional bonus of TC/ABS intervention stats. Stay on top of your game with active assists and overall stint details showcasing your best lap"
+      "description": "Revel in detailed lap specifics such as time, top- and average-speed, with the additional bonus of TC/ABS intervention stats. Stay on top of your game with active assists and overall stint details showcasing your best lap",
+      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
     },
     "feature3": {
       "title": "Spotting",
       "subtitle": "Sharing and recieving your best laps to help each other out",
-      "description": "The Spotting page gives you an easier time keeping an overview of the race. You can see everyone's last and fastest times, how often they pitted, who is currently driving and more"
+      "description": "The Spotting page gives you an easier time keeping an overview of the race. You can see everyone's last and fastest times, how often they pitted, who is currently driving and more",
+      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
     },
     "feature4": {
       "title": "Community",
       "subtitle": "For a better overview of the race",
-      "description": "Aside from adding each other as friends via ACC DRIVE, comparing yourself to faster times within the community is now possible as well! After completing a valid lap, your telemetry data is uploaded to our secure server."
+      "description": "Aside from adding each other as friends via ACC DRIVE, comparing yourself to faster times within the community is now possible as well! After completing a valid lap, your telemetry data is uploaded to our secure server.",
+      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
     },
     "feature5": {
       "title": "Radar",
       "subtitle": "Perfect for close racing",
-      "description": "Shows the position of other cars around you. Can be customized for the distance ahead, behind and next to you."
+      "description": "Shows the position of other cars around you. Can be customized for the distance ahead, behind and next to you.",
+      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
     },
     "feature6": {
       "title": "Yellow Flags",
       "subtitle": "The most important data at hand",
-      "description": "This is an improvement over the in-game yellow flag system. It adds the distance to an accident, the position and rotation of the crashed car into one system that warns you efficiently before the game does"
+      "description": "This is an improvement over the in-game yellow flag system. It adds the distance to an accident, the position and rotation of the crashed car into one system that warns you efficiently before the game does",
+      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
     },
     "feature7": {
       "title": "Full Tyre & Damage App",
       "subtitle": "All the data about your car you will need",
-      "description": "This feature shows you the actual values based on the performance of your tires/brakes instead of some random values Kunos is presenting. It also features a damage-model when you take damage"
+      "description": "This feature shows you the actual values based on the performance of your tires/brakes instead of some random values Kunos is presenting. It also features a damage-model when you take damage",
+      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
     },
     "feature8": {
       "title": "VR Support",
       "subtitle": "ACC DRIVE fully works in VR",
-      "description": "When setting up the App you can decide to always position ACC DRIVE in front to put it infront of all other applications"
+      "description": "When setting up the App you can decide to always position ACC DRIVE in front to put it infront of all other applications",
+      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
     }
   }
 }

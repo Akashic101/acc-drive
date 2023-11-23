@@ -6,16 +6,20 @@ import {
   Button,
   Divider,
   Modal,
+  Space,
+  Title,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { ReactNode } from "react";
 import classes from "./FeatureCard.module.css";
 import I18n from "../i18n.js";
+import accdrive1 from "../media/acc_1.jpg";
 
 interface FeatureCardProps {
   featureName: string;
   featureText: string;
   longText: string;
+  modalText: string;
   icon: ReactNode;
   image: string;
 }
@@ -24,6 +28,7 @@ export function FeatureCard({
   featureName,
   featureText,
   longText,
+  modalText,
   icon,
   image,
 }: FeatureCardProps) {
@@ -31,8 +36,18 @@ export function FeatureCard({
 
   return (
     <>
-      <Modal opened={opened} onClose={close} title="Authentication">
-        {}
+      <Modal
+        size="lg"
+        opened={opened}
+        onClose={close}
+        title={<Title>{featureName}</Title>}
+      >
+        <Space h="md" />
+        {<Image radius="md" src={accdrive1} />}
+        <Space h="md" />
+        <Divider />
+        <Space h="md" />
+        <Text>{modalText}</Text>
       </Modal>
       <Card
         w={"20%"}

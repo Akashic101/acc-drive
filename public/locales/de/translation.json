@@ -12,11 +12,17 @@
     "updates": "Ständige Verbesserungen und neue Funktionen"
   },
   "cta": {
-    "title": "HOL DIR JETZT ACC DRIVE!",
-    "costs": "Hol dir deine lebenslange Lizenz für nur 25€",
-    "changeLinkedAccount_1": "Deine ACC DRIVE-Lizenz wird mit deinem Steam-Account verknüpft.",
-    "changeLinkedAccount_2": "Wenn du den verknüpften Account ändern möchtest, kannst du uns über Discord kontaktieren.",
-    "checkout": "Checkout mit Paypal"
+    "main": {
+      "title": "HOL DIR JETZT ACC DRIVE!",
+      "costs": "Hol dir deine lebenslange Lizenz für nur 25€",
+      "changeLinkedAccount_1": "Deine ACC DRIVE-Lizenz wird mit deinem Steam-Account verknüpft.",
+      "changeLinkedAccount_2": "Wenn du den verknüpften Account ändern möchtest, kannst du uns über Discord kontaktieren.",
+      "checkout": "Checkout mit Paypal"
+    },
+    "video": {
+      "title": "Sehe ACC DRIVE im Einsatz!",
+      "subtitle": "Werfe einen kurzen Blick auf die wichtigsten Funktionen von ACC DRIVE"
+    }
   },
   "features": {
     "feature1": {
