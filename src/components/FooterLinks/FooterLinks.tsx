@@ -73,7 +73,7 @@ export function FooterLinks() {
                 group.title === "Impressum" ? "underline" : "none",
             }}
           >
-            {link.label}
+            <Text>{link.label}</Text>
           </Anchor>
         );
       } else {

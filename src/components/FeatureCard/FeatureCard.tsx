@@ -51,6 +51,7 @@ export function FeatureCard({
         <Text>{modalText}</Text>
         <Divider />
         <Button
+          fullWidth
           className={classes.button}
           color={"#85d46c"}
           variant="outline"

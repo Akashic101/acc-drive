@@ -156,9 +156,14 @@ export function HeaderMegaMenu() {
             </a>
           </Group>
 
-          <LanguagePicker />
           <Group visibleFrom="sm">
-            <Button color={"#66ae3f"}>Login</Button>
+            <LanguagePicker />
+            <Link to={"home"}>
+              <Button color={"#66ae3f"}>Login</Button>
+            </Link>
+          </Group>
+          <Group hiddenFrom={"sm"}>
+            <LanguagePicker />
           </Group>
 
           <Burger
@@ -173,24 +178,39 @@ export function HeaderMegaMenu() {
         opened={drawerOpened}
         onClose={closeDrawer}
         size="100%"
+        padding="md"
+        title={<Logo />}
         hiddenFrom="sm"
         zIndex={1000000}
       >
-        <Logo />
-        <ScrollArea h={`calc(100vh`} mx="-md">
+        <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
-          <Link to="home">Home</Link>
-          <Container className={classes.link} onClick={toggleLinks}>
-            <Text>Features</Text>
-            <IconChevronDown
-              color={"#66ae3f"}
-              style={{ width: rem(16), height: rem(16) }}
-            />
-          </Container>
+
+          <Link to={"home"}>
+            <Text className={classes.link}>Home</Text>
+          </Link>
+
+          <UnstyledButton className={classes.link} onClick={toggleLinks}>
+            <Center inline>
+              <Box component="span" mr={5}>
+                Features
+              </Box>
+              <IconChevronDown
+                style={{ width: rem(16), height: rem(16) }}
+                color={"#66ae3f"}
+              />
+            </Center>
+          </UnstyledButton>
           <Collapse in={linksOpened}>{links}</Collapse>
-          <Link to="community">Community</Link>
+
           <Divider my="sm" />
-          <Button color={"#66ae3f"}>Login</Button>
+          <Group justify="center" grow pb="xl" px="md">
+            <Link to={"home"}>
+              <Button fullWidth color={"#66ae3f"}>
+                Log in
+              </Button>
+            </Link>
+          </Group>
         </ScrollArea>
       </Drawer>
     </Box>

@@ -24,11 +24,11 @@ export function HeroTitle() {
     notifications.show({
       id: "websiteStatus",
       title: "This website is in beta",
-      message: "Current version: 0.2.3. Last updated on 24.11.2023 at 00:00",
+      message: "Current version: 0.2.3. Last updated on 25.11.2023 at 14:00",
       color: "red",
       icon: <IconAlertTriangle size={"1rem"} />,
     });
   }, []);
 
-  return <div>{isDesktop ? <VideoHero /> : <ImageHero />}</div>;
+  return <div id="home">{isDesktop ? <VideoHero /> : <ImageHero />}</div>;
 }
