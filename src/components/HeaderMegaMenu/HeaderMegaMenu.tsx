@@ -15,6 +15,7 @@ import {
   Collapse,
   ScrollArea,
   rem,
+  Container,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import {
@@ -155,10 +156,9 @@ export function HeaderMegaMenu() {
             </a>
           </Group>
 
+          <LanguagePicker />
           <Group visibleFrom="sm">
-            <LanguagePicker />
-            <Button variant="default">Log in</Button>
-            <Button>Sign up</Button>
+            <Button color={"#66ae3f"}>Login</Button>
           </Group>
 
           <Burger
@@ -173,24 +173,24 @@ export function HeaderMegaMenu() {
         opened={drawerOpened}
         onClose={closeDrawer}
         size="100%"
-        padding="md"
         hiddenFrom="sm"
         zIndex={1000000}
       >
-        <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
+        <Logo />
+        <ScrollArea h={`calc(100vh`} mx="-md">
           <Divider my="sm" />
           <Link to="home">Home</Link>
-          <UnstyledButton className={classes.link} onClick={toggleLinks}>
-            <Center inline>
-              <Box component="span" mr={5}>
-                Features
-              </Box>
-              <IconChevronDown style={{ width: rem(16), height: rem(16) }} />
-            </Center>
-          </UnstyledButton>
-          <Link to="community">Community</Link>
+          <Container className={classes.link} onClick={toggleLinks}>
+            <Text>Features</Text>
+            <IconChevronDown
+              color={"#66ae3f"}
+              style={{ width: rem(16), height: rem(16) }}
+            />
+          </Container>
           <Collapse in={linksOpened}>{links}</Collapse>
-          <Divider my="sm" /> <LanguagePicker />
+          <Link to="community">Community</Link>
+          <Divider my="sm" />
+          <Button color={"#66ae3f"}>Login</Button>
         </ScrollArea>
       </Drawer>
     </Box>
