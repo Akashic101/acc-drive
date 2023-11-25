@@ -16,34 +16,36 @@ export function CTABanner() {
   const { t } = useTranslation("translations");
   return (
     <Center>
-      <SimpleGrid cols={{ base: 1, xs: 2 }} spacing={50} mt={30}>
-        <Container className={classes.wrapper}>
-          <Title className={classes.title}>
-            <Text
-              component="span"
-              inherit
-              variant="gradient"
-              fs={"italic"}
-              gradient={{ from: "green", to: "#85d46c" }}
-            >
-              <Trans i18nKey="cta.main.title" />
+      <SimpleGrid cols={{ base: 1, xs: 2 }} spacing={250}>
+        <Center>
+          <Container className={classes.wrapper}>
+            <Title className={classes.title}>
+              <Text
+                component="span"
+                inherit
+                variant="gradient"
+                fs={"italic"}
+                gradient={{ from: "green", to: "#85d46c" }}
+              >
+                <Trans i18nKey="cta.main.title" />
+              </Text>
+              <br />
+            </Title>
+            <Text size="xl" fw={500}>
+              <Trans i18nKey="cta.main.costs" />
             </Text>
-            <br></br>
-          </Title>
-          <Text size="xl" fw={500}>
-            <Trans i18nKey="cta.main.costs" />
-          </Text>
-          <Text size="sm">
-            <Trans i18nKey="cta.main.changeLinkedAccount_1" />
-          </Text>
-          <Text size="sm">
-            <Trans i18nKey="cta.main.changeLinkedAccount_2" />
-          </Text>
-          <Space h={"lg"} />
-          <Button color={"#ffc438"} fullWidth>
-            <Trans i18nKey="cta.main.checkout" />
-          </Button>
-        </Container>
+            <Text size="sm">
+              <Trans i18nKey="cta.main.changeLinkedAccount_1" />
+            </Text>
+            <Text size="sm">
+              <Trans i18nKey="cta.main.changeLinkedAccount_2" />
+            </Text>
+            <Space h={"lg"} />
+            <Button color={"#ffc438"} fullWidth>
+              <Trans i18nKey="cta.main.checkout" />
+            </Button>
+          </Container>
+        </Center>
         <Center>
           <Image src={pitstop} h={"90%"} />
         </Center>
