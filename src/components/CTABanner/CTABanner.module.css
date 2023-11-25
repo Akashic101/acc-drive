@@ -3,7 +3,6 @@
   src: local("FranklingGothicBold"),
     url(../../fonts/Franklin_Gothic_Bold.ttf) format("truetype");
 }
-
 .title {
   font-size: rem(62px);
   font-weight: 900;
@@ -16,8 +15,4 @@
     font-size: rem(42px);
     line-height: 1.2;
   }
-}
-
-.alignedCenter {
-  padding-top: 4%;
 }

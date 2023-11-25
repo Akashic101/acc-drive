@@ -21,7 +21,6 @@ export function CTABanner() {
           <Container className={classes.wrapper}>
             <Title className={classes.title}>
               <Text
-                component="span"
                 inherit
                 variant="gradient"
                 fs={"italic"}
@@ -29,7 +28,6 @@ export function CTABanner() {
               >
                 <Trans i18nKey="cta.main.title" />
               </Text>
-              <br />
             </Title>
             <Text size="xl" fw={500}>
               <Trans i18nKey="cta.main.costs" />
