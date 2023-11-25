@@ -1,11 +1,9 @@
 import {
   Container,
-  Grid,
   Title,
   Text,
   Space,
   Center,
-  Stack,
   SimpleGrid,
 } from "@mantine/core";
 import classes from "./CTAVideoBanner.module.css";

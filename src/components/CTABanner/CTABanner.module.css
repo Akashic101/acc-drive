@@ -1,9 +1,16 @@
+@font-face {
+  font-family: "FranklingGothicBold";
+  src: local("FranklingGothicBold"),
+    url(../../fonts/Franklin_Gothic_Bold.ttf) format("truetype");
+}
+
 .title {
   font-size: rem(62px);
   font-weight: 900;
   line-height: 1.1;
   margin: 0;
   padding: 0;
+  font-family: "FranklingGothicBold";
 
   @media (max-width: $mantine-breakpoint-sm) {
     font-size: rem(42px);

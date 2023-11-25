@@ -1,4 +1,4 @@
-import { Center, Container, Group, SimpleGrid } from "@mantine/core";
+import { Center, SimpleGrid } from "@mantine/core";
 import {
   IconAppWindow,
   IconBadgeVr,

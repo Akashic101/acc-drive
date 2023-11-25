@@ -1,42 +1,28 @@
 import {
-  Button,
-  CheckIcon,
   Container,
-  Flex,
-  Group,
-  Text,
-  ThemeIcon,
   Title,
+  Text,
+  Button,
+  Group,
+  Flex,
+  ThemeIcon,
+  CheckIcon,
 } from "@mantine/core";
-import { Trans, useTranslation } from "react-i18next";
-import ReactPlayer from "react-player";
-import backgroundVideo from "../../media/preview3D.mp4";
-import classes from "./VideoHero.module.css";
 import { notifications } from "@mantine/notifications";
 import {
   IconBrandDiscord,
   IconCpu,
   IconRouteSquare,
 } from "@tabler/icons-react";
+import { Trans, useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
+import classes from "./ImageHero.module.css";
 
-export function VideoHero() {
+export function ImageHero() {
   const { t } = useTranslation("translations");
-
   return (
-    <div className={classes.heroContainer}>
-      <div className={classes.heroTitleContainer} id="home">
-        <ReactPlayer
-          url={backgroundVideo}
-          playing={true}
-          loop={true}
-          muted={true}
-          width="100%"
-          height="50%"
-          className={classes.videoBackground}
-        />
-      </div>
-      <Container size={"lg"} className={classes.videoOverlay}>
+    <div className={classes.root} id="home">
+      <Container size="lg">
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
@@ -48,13 +34,13 @@ export function VideoHero() {
               >
                 <Trans i18nKey="title.toolkit" />
               </Text>
-              <br />
+              <br></br>
               <Text component="span" inherit>
                 <Trans i18nKey="title.creator" />
               </Text>
             </Title>
 
-            <Text fw={500} className={classes.description} mt={30}>
+            <Text className={classes.description} mt={30}>
               <Trans i18nKey="title.advertisement-text" />
             </Text>
             <Group>

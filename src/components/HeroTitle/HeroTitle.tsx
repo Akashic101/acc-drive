@@ -1,29 +1,25 @@
-import {
-  Container,
-  Title,
-  Text,
-  Button,
-  Group,
-  Flex,
-  ThemeIcon,
-  CheckIcon,
-} from "@mantine/core";
 import { notifications } from "@mantine/notifications";
-import {
-  IconAlertTriangle,
-  IconBrandDiscord,
-  IconCpu,
-  IconRouteSquare,
-} from "@tabler/icons-react";
-import { useEffect } from "react";
-import { Trans, useTranslation } from "react-i18next";
-import { Link } from "react-scroll";
-import classes from "./HeroTitle.module.css";
-import ReactPlayer from "react-player";
-import backgroundVideo from "../../media/preview3D.mp4";
+import { IconAlertTriangle } from "@tabler/icons-react";
+import { useEffect, useState } from "react";
+import { ImageHero } from "../ImageHero/ImageHero";
+
 import { VideoHero } from "../VideoHero/VideoHero";
 
 export function HeroTitle() {
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   useEffect(() => {
     notifications.show({
       id: "websiteStatus",
@@ -34,10 +30,5 @@ export function HeroTitle() {
     });
   }, []);
 
-  const { t } = useTranslation("translations");
-  return (
-    <div>
-      <VideoHero />
-    </div>
-  );
+  return <div>{isDesktop ? <VideoHero /> : <ImageHero />}</div>;
 }

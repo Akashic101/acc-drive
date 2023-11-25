@@ -23,6 +23,7 @@ export function CTABanner() {
               component="span"
               inherit
               variant="gradient"
+              fs={"italic"}
               gradient={{ from: "green", to: "#85d46c" }}
             >
               <Trans i18nKey="cta.main.title" />
