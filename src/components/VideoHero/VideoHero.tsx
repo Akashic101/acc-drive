@@ -33,7 +33,6 @@ export function VideoHero() {
           muted={true}
           width="100%"
           height="50%"
-          className={classes.videoBackground}
         />
       </div>
       <Container size={"lg"} className={classes.videoOverlay}>
