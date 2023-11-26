@@ -44,9 +44,12 @@ const data = [
       { label: "Datenschutz (Website)", id: "https://accdrive.com/privacy" },
       {
         label: "Datenschutz (Application)",
-        id: "https://accdrive.com/privacy",
+        id: "https://accdrive.ritter-systems.com/release/privacy.html",
       },
-      { label: "Nutzungsbedigungen", id: "#" },
+      {
+        label: "Nutzungsbedigungen",
+        id: " https://accdrive.ritter-systems.com/release/tos.html",
+      },
     ],
   },
 ];
