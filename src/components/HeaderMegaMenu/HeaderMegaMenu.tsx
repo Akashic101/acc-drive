@@ -15,7 +15,6 @@ import {
   Collapse,
   ScrollArea,
   rem,
-  Container,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import {
