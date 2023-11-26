@@ -148,7 +148,7 @@ function App() {
                 <HoverCard.Dropdown style={{ overflow: "hidden" }}>
                   <Group justify="space-between" px="md">
                     <Text fw={500}>Features</Text>
-                    <Anchor href="#" fz="xs">
+                    <Anchor href="#features" fz="xs">
                       View all
                     </Anchor>
                   </Group>

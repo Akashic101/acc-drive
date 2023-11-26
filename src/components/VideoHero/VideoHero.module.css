@@ -1,74 +1,22 @@
-.heroContainer {
+.videoContainer {
+  border: 10px solid red;
+  padding-bottom: 2%;
   position: relative;
+  width: "100%";
+  height: 800px;
 }
 
-.heroTitleContainer {
-  position: relative;
-}
-
-@font-face {
-  font-family: "FranklingGothicBold";
-  src: local("FranklingGothicBold"),
-    url(../../fonts/Franklin_Gothic_Bold.ttf) format("truetype");
-}
-
-.videoOverlay {
+.videoPlayer {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.image {
-  @media (max-width: $mantine-breakpoint-md) {
-    display: none;
-  }
+  top: 0;
+  left: 0;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .content {
-  width: 80%;
-  font-family: "FranklingGothicBold";
-  padding-top: calc(var(--mantine-spacing-xl) * 2);
-  padding-bottom: calc(var(--mantine-spacing-xl) * 2);
-  margin-right: calc(var(--mantine-spacing-xl) * 3);
-
-  @media (max-width: $mantine-breakpoint-md) {
-    margin-right: 0;
-  }
-}
-
-.title {
-  color: var(--mantine-color-white);
-  font-family: "FranklingGothicBold";
-  font-weight: 900;
-  line-height: 1.05;
-  max-width: rem(500px);
-  font-size: rem(48px);
-
-  @media (max-width: $mantine-breakpoint-md) {
-    max-width: 100%;
-    font-size: rem(34px);
-    line-height: 1.15;
-  }
-}
-
-.description {
-  color: var(--mantine-color-white);
-  opacity: 0.75;
-  max-width: rem(500px);
-
-  @media (max-width: $mantine-breakpoint-md) {
-    max-width: 100%;
-  }
-}
-
-.control {
-  padding-left: rem(50px);
-  padding-right: rem(50px);
-  font-family: Greycliff CF, var(--mantine-font-family);
-  font-size: rem(22px);
-
-  @media (max-width: $mantine-breakpoint-md) {
-    width: 100%;
-  }
+  position: relative;
+  z-index: 100;
 }
