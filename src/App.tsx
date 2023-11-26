@@ -21,6 +21,10 @@ import {
   ThemeIcon,
   Anchor,
   SimpleGrid,
+  Select,
+  SegmentedControl,
+  SegmentedControlItem,
+  Container,
 } from "@mantine/core";
 import { FeatureCardList } from "./components/FeatureCardList/FeatureCardList";
 import { I18nextProvider } from "react-i18next";
@@ -43,6 +47,10 @@ import {
   IconUsers,
 } from "@tabler/icons-react";
 import classes from "./App.module.css";
+import { changeLanguage } from "i18next";
+import { useEffect, useState } from "react";
+import ReactCountryFlag from "react-country-flag";
+import { LanguagePickerMobile } from "./components/LanguagePickerMobile/LanguagePickerMobile";
 
 const featureList = [
   {
@@ -81,26 +89,35 @@ function App() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
+  const [selectedLanguage, setSelectedLanguage] = useState("gb");
+
+  const handleLanguageChange = (value: string) => {
+    setSelectedLanguage(value);
+    changeLanguage(value);
+    closeDrawer();
+  };
 
   const links = featureList.map((feature) => (
-    <UnstyledButton className={classes.subLink} key={feature.title}>
-      <Group wrap="nowrap" align="flex-start">
-        <ThemeIcon size={34} variant="default" radius="md">
-          <feature.icon
-            style={{ width: rem(22), height: rem(22) }}
-            color={"#66ae3f"}
-          />
-        </ThemeIcon>
-        <div>
-          <Text size="sm" fw={500}>
-            {feature.title}
-          </Text>
-          <Text size="xs" c="dimmed">
-            {feature.description}
-          </Text>
-        </div>
-      </Group>
-    </UnstyledButton>
+    <Link to="features" onClick={closeDrawer}>
+      <UnstyledButton className={classes.subLink} key={feature.title}>
+        <Group wrap="nowrap" align="flex-start">
+          <ThemeIcon size={34} variant="default" radius="md">
+            <feature.icon
+              style={{ width: rem(22), height: rem(22) }}
+              color={"#66ae3f"}
+            />
+          </ThemeIcon>
+          <div>
+            <Text size="sm" fw={500}>
+              {feature.title}
+            </Text>
+            <Text size="xs" c="dimmed">
+              {feature.description}
+            </Text>
+          </div>
+        </Group>
+      </UnstyledButton>
+    </Link>
   ));
 
   return (
@@ -115,7 +132,9 @@ function App() {
       >
         <AppShell.Header>
           <Group h="100%" px="md" justify="space-between">
-            <Logo />
+            <Link to={"home"}>
+              <Logo />
+            </Link>
             <Burger
               opened={drawerOpened}
               onClick={toggleDrawer}
@@ -156,7 +175,7 @@ function App() {
                   <Divider my="sm" />
 
                   <SimpleGrid cols={2} spacing={0}>
-                    {links}
+                    <Link to={"features"}>{links}</Link>
                   </SimpleGrid>
                 </HoverCard.Dropdown>
               </HoverCard>
@@ -173,24 +192,6 @@ function App() {
           </Group>
         </AppShell.Header>
 
-        <AppShell.Navbar py="md" px={4}>
-          <UnstyledButton>Home</UnstyledButton>
-          <UnstyledButton>Features</UnstyledButton>
-          <UnstyledButton>Community</UnstyledButton>
-          <Divider my="sm" />
-
-          <Center>
-            <LanguagePicker />
-          </Center>
-          <Divider my="sm" />
-
-          <Link to={"home"}>
-            <Button fullWidth color={"#66ae3f"}>
-              Login
-            </Button>
-          </Link>
-        </AppShell.Navbar>
-
         <Drawer
           opened={drawerOpened}
           onClose={closeDrawer}
@@ -202,11 +203,9 @@ function App() {
         >
           <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
             <Divider my="sm" />
-
-            <Link to={"home"}>
+            <Link to={"home"} onClick={closeDrawer}>
               <Text className={classes.link}>Home</Text>
             </Link>
-
             <UnstyledButton className={classes.link} onClick={toggleLinks}>
               <Center inline>
                 <Box component="span" mr={5}>
@@ -219,7 +218,9 @@ function App() {
               </Center>
             </UnstyledButton>
             <Collapse in={linksOpened}>{links}</Collapse>
-
+            <Link to={"community"} onClick={closeDrawer}>
+              <Text className={classes.link}>Community</Text>
+            </Link>
             <Divider my="sm" />
             <Group justify="center" grow pb="xl" px="md">
               <Link to={"home"}>
@@ -228,6 +229,7 @@ function App() {
                 </Button>
               </Link>
             </Group>
+            <LanguagePickerMobile />
           </ScrollArea>
         </Drawer>
 
