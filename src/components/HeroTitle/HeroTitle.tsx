@@ -24,7 +24,7 @@ export function HeroTitle() {
     notifications.show({
       id: "websiteStatus",
       title: "This website is in beta",
-      message: "Current version: 0.2.4. Last updated on 25.11.2023 at 16:30",
+      message: "Current version: 0.2.5. Last updated on 26.11.2023 at 18:30",
       color: "red",
       icon: <IconAlertTriangle size={"1rem"} />,
     });
