@@ -175,7 +175,7 @@ function App() {
                   <Divider my="sm" />
 
                   <SimpleGrid cols={2} spacing={0}>
-                    <Link to={"features"}>{links}</Link>
+                    {links}
                   </SimpleGrid>
                 </HoverCard.Dropdown>
               </HoverCard>
