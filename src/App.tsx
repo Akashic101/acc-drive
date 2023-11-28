@@ -1,7 +1,5 @@
 import "./App.css";
 import "@mantine/core/styles.css";
-import { HeroTitle } from "./components/HeroTitle/HeroTitle";
-import { CTABanner } from "./components/CTABanner/CTABanner";
 import {
   AppShell,
   Box,
@@ -14,25 +12,15 @@ import {
   Group,
   HoverCard,
   ScrollArea,
-  Space,
   UnstyledButton,
   rem,
   Text,
   ThemeIcon,
   Anchor,
   SimpleGrid,
-  Select,
-  SegmentedControl,
-  SegmentedControlItem,
-  Container,
 } from "@mantine/core";
-import { FeatureCardList } from "./components/FeatureCardList/FeatureCardList";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
-import { CTAVideoBanner } from "./components/CTAVideoBanner/CTAVideoBanner";
-import { CommunityReviews } from "./components/CommunityReviews/CommunityReviews";
-import { CTABannerSingle } from "./components/CTABannerSingle/CTABannerSingle";
-import { FooterLinks } from "./components/FooterLinks/FooterLinks";
 import Logo from "./components/Logo/Logo";
 import { useDisclosure } from "@mantine/hooks";
 import { Link } from "react-scroll";
@@ -47,10 +35,8 @@ import {
   IconUsers,
 } from "@tabler/icons-react";
 import classes from "./App.module.css";
-import { changeLanguage } from "i18next";
-import { useEffect, useState } from "react";
-import ReactCountryFlag from "react-country-flag";
 import { LanguagePickerMobile } from "./components/LanguagePickerMobile/LanguagePickerMobile";
+import BodyContent from "./components/BodyContent/BodyContent";
 
 const featureList = [
   {
@@ -89,13 +75,6 @@ function App() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("gb");
-
-  const handleLanguageChange = (value: string) => {
-    setSelectedLanguage(value);
-    changeLanguage(value);
-    closeDrawer();
-  };
 
   const links = featureList.map((feature) => (
     <Link to="features" onClick={closeDrawer}>
@@ -171,9 +150,7 @@ function App() {
                       View all
                     </Anchor>
                   </Group>
-
                   <Divider my="sm" />
-
                   <SimpleGrid cols={2} spacing={0}>
                     {links}
                   </SimpleGrid>
@@ -235,28 +212,8 @@ function App() {
 
         <AppShell.Main>
           <I18nextProvider i18n={i18n}>
-            <HeroTitle />
-            <Space h="xl" id="pricing" />
-            <CTABanner />
-            <Space h="xl" />
-            <Space h="xl" />
-            <Space h="xl" id="features" />
-            <Space h="xl" />
-            <FeatureCardList />
-            <Space h="xl" />
-            <CTAVideoBanner />
-            <Space h="xl" />
-            <Space h="xl" id="community" />
-            <Space h="xl" />
-            <CommunityReviews />
-            <Space h="xl" />
-            <Space h="xl" />
-            <Space h="xl" />
-            <CTABannerSingle />
-            <Space h="xl" />
-            <Space h="xl" />
+            <BodyContent />
           </I18nextProvider>
-          <FooterLinks />
         </AppShell.Main>
       </AppShell>
     </div>
