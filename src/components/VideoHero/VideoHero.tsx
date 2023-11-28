@@ -22,7 +22,7 @@ export function VideoHero() {
           },
         }}
       />
-      <div className={classes.content}></div>
+
       <HeroContent />
     </div>
   );

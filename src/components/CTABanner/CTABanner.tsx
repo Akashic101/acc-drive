@@ -22,9 +22,9 @@ export function CTABanner() {
           <Container className={classes.wrapper}>
             <Title className={classes.title}>
               <Text
+                fs="italic"
                 inherit
                 variant="gradient"
-                fs={"italic"}
                 gradient={{ from: "green", to: "#85d46c" }}
               >
                 <Trans i18nKey="cta.main.title" />

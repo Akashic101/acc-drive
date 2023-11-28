@@ -28,14 +28,12 @@ export function HeroContent() {
         <Title className={classes.title}>
           <Text
             fs="italic"
-            component="span"
             inherit
             variant="gradient"
             gradient={{ from: "green", to: "#85d46c" }}
           >
             <Trans i18nKey="title.toolkit" />
           </Text>
-          <br></br>
           <Text component="span" inherit>
             <Trans i18nKey="title.creator" />
           </Text>

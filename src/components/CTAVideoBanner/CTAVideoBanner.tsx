@@ -24,14 +24,13 @@ export function CTAVideoBanner() {
         <Container className={classes.wrapper}>
           <Title className={classes.title}>
             <Text
-              component="span"
+              fs={"italic"}
               inherit
               variant="gradient"
               gradient={{ from: "green", to: "#85d46c" }}
             >
               <Trans i18nKey="cta.video.title" />
-            </Text>{" "}
-            <br></br>
+            </Text>
           </Title>
           <Text size="xl" fw={500}>
             <Trans i18nKey="cta.video.subtitle" />
