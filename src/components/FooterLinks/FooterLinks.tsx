@@ -4,10 +4,11 @@ import {
   ActionIcon,
   Group,
   rem,
-  Space,
   Center,
   Anchor,
   SimpleGrid,
+  Divider,
+  Stack,
 } from "@mantine/core";
 import {
   IconBrandYoutube,
@@ -105,16 +106,21 @@ export function FooterLinks() {
           <Container className={classes.inner}>
             <div className={classes.logo}>
               <Logo />
-              <Space h={"lg"} />
               <Text size="xs" c="dimmed" className={classes.description}>
                 Supercharge your driving
               </Text>
             </div>
           </Container>
           <Container>
-            <SimpleGrid cols={{ base: 1, sm: 3, lg: 3 }}>{groups}</SimpleGrid>
+            <SimpleGrid
+              style={{ right: "50%" }}
+              cols={{ base: 1, sm: 3, lg: 3 }}
+            >
+              {groups}
+            </SimpleGrid>
           </Container>
         </SimpleGrid>
+        <Divider my={"sm"} />
 
         <Container className={classes.afterFooter}>
           <Text c="dimmed" size="sm">
