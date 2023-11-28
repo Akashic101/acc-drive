@@ -27,6 +27,7 @@ export function HeroContent() {
       <div className={classes.content}>
         <Title className={classes.title}>
           <Text
+            fs="italic"
             component="span"
             inherit
             variant="gradient"
@@ -44,12 +45,22 @@ export function HeroContent() {
         </Text>
         <Group>
           <Link to={"features"}>
-            <Button variant="default" size="lg" mt={40}>
+            <Button
+              variant="default"
+              size="lg"
+              mt={40}
+              className={classes.control}
+            >
               Features
             </Button>
           </Link>
           <Link to={"community"}>
-            <Button variant="default" size="lg" mt={40}>
+            <Button
+              variant="default"
+              size="lg"
+              mt={40}
+              className={classes.control}
+            >
               Community
             </Button>
           </Link>

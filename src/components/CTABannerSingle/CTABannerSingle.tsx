@@ -18,6 +18,7 @@ export function CTABannerSingle() {
         <Container>
           <Title className={classes.title}>
             <Text
+              fs="italic"
               component="span"
               inherit
               variant="gradient"
@@ -31,7 +32,7 @@ export function CTABannerSingle() {
             <Trans i18nKey="cta.main.costs" />
           </Text>
           <Space h={"lg"} />
-          <Button color={"#ffc438"} fullWidth>
+          <Button color={"#66ae3f"} fullWidth>
             <Trans i18nKey="cta.main.checkout" />
           </Button>
         </Container>

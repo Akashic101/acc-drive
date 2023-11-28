@@ -38,7 +38,7 @@ export function FeatureCardList() {
             featureName={I18n.t("features.feature2.title")}
             featureText={I18n.t("features.feature2.subtitle")}
             longText={I18n.t("features.feature2.description")}
-            modalText={I18n.t("features.feature1.modalText")}
+            modalText={I18n.t("features.feature2.modalText")}
             icon={<IconFileSpreadsheet size="50" color={"#66ae3f"} />}
             image={accDrive1}
           />

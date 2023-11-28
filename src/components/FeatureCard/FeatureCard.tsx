@@ -10,7 +10,7 @@ import {
   Title,
   Container,
 } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
+import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 import { ReactNode } from "react";
 import classes from "./FeatureCard.module.css";
 import I18n from "../../i18n.js";
@@ -34,6 +34,7 @@ export function FeatureCard({
   image,
 }: FeatureCardProps) {
   const [opened, { open, close }] = useDisclosure(false);
+  const isMobile = useMediaQuery("(max-width: 50em)");
 
   return (
     <>
@@ -42,6 +43,7 @@ export function FeatureCard({
         opened={opened}
         onClose={close}
         title={<Title>{featureName}</Title>}
+        fullScreen={isMobile}
       >
         <Space h="md" />
         {<Image radius="md" src={accdrive1} />}

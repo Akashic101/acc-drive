@@ -11,6 +11,7 @@ import {
 import classes from "./CTABanner.module.css";
 import pitstop from "../../media/pitstop.gif";
 import { Trans, useTranslation } from "react-i18next";
+let pitstop2 = require("../../media/pitstop.gif");
 
 export function CTABanner() {
   const { t } = useTranslation("translations");
@@ -39,13 +40,13 @@ export function CTABanner() {
               <Trans i18nKey="cta.main.changeLinkedAccount_2" />
             </Text>
             <Space h={"lg"} />
-            <Button color={"#ffc438"} fullWidth>
+            <Button color={"#66ae3f"} fullWidth>
               <Trans i18nKey="cta.main.checkout" />
             </Button>
           </Container>
         </Center>
         <Center>
-          <Image src={pitstop} h={"90%"} />
+          <img className={classes.pitstopGif} src={pitstop} />
         </Center>
       </SimpleGrid>
     </Center>

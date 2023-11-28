@@ -36,7 +36,7 @@
       "title": "Telemetry",
       "subtitle": "Additional Info on your past sessions",
       "description": "Revel in detailed lap specifics such as time, top- and average-speed, with the additional bonus of TC/ABS intervention stats. Stay on top of your game with active assists and overall stint details showcasing your best lap",
-      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
+      "modalText": "This is some very short text"
     },
     "feature3": {
       "title": "Spotting",
