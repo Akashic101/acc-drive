@@ -37,6 +37,7 @@ import {
 import classes from "./App.module.css";
 import { LanguagePickerMobile } from "./components/LanguagePickerMobile/LanguagePickerMobile";
 import BodyContent from "./components/BodyContent/BodyContent";
+import LoginButton from "./components/LoginButton/LoginButton";
 
 const featureList = [
   {
@@ -162,9 +163,7 @@ function App() {
             </Group>
             <Group visibleFrom="sm">
               <LanguagePicker />
-              <Link to={"home"}>
-                <Button color={"#66ae3f"}>Login</Button>
-              </Link>
+              <LoginButton />
             </Group>
           </Group>
         </AppShell.Header>
@@ -201,9 +200,7 @@ function App() {
             <Divider my="sm" />
             <Group justify="center" grow pb="xl" px="md">
               <Link to={"home"}>
-                <Button fullWidth color={"#66ae3f"}>
-                  Log in
-                </Button>
+                <LoginButton />
               </Link>
             </Group>
             <LanguagePickerMobile />
