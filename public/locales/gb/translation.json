@@ -4,105 +4,105 @@
     "close": "close"
   },
   "title": {
-    "toolkit": "THE RACER'S TOOLKIT",
+    "toolkit": "THE ULTIMATE ACC APP",
     "creator": "FROM THE CREATORS OF ACC TV AND PYRACEENGINEER",
-    "advertisement-text": "When your mirrors are filled with the competition, and your team is depending on you to bring it home, the race should be your focus. ACC DRIVE provides every tool that you need to keep you immersed in the battle, and not off in the menus. It is a fully featured toolkit that gives you and your team the cutting edge needed to win races.",
+    "advertisement-text": "Maximize your Assetto Corsa Competizione experience with ACC DRIVE. Designed for racers focused on endurance races and performance, this must-have app provides a suite of tools to keep you immersed in the race. Experience enhanced HUDs, efficient pitstop management, and precise fuel calculations – all in one lightweight app.",
     "download-buy": "Download / Buy",
-    "community": "Join the community and talk with other drivers",
-    "performance": "Small, lightweight and no impact on FPS",
-    "updates": "Constant improvements and new features"
+    "community": "Join our ACC community for insights and discussions",
+    "performance": "Optimized for Peak Performance with Minimal FPS Impact",
+    "updates": "Regular updates with new, innovative features"
   },
   "cta": {
     "main": {
       "title": "GET ACC DRIVE NOW!",
-      "costs": "Get your lifetime license for only 25€",
-      "changeLinkedAccount_1": "Your ACC DRIVE-license will be linked to your Steam-Account.",
-      "changeLinkedAccount_2": "If you want to change the linked account you can contact us via Discord.",
+      "costs": "Secure your lifetime license for only 25€ (incl. VAT)",
+      "changeLinkedAccount_1": "ACC DRIVE-license linked to your Steam-Account once the key is used.",
+      "changeLinkedAccount_2": "Need to change accounts? Reach us on Discord.",
       "checkout": "Checkout with Paypal"
     },
     "video": {
-      "title": "SEE ACC DRIVE IN ACTION!",
-      "subtitle": "Get a quick look at some gameplay showing the key features of ACC DRIVE"
+      "title": "Watch ACC DRIVE in action!",
+      "subtitle": "Explore the key features of ACC DRIVE with Mabix"
     }
   },
   "features": {
     "feature1": {
-      "title": "Race Engineer",
-      "subtitle": "The most important data at hand",
-      "description": "The Race Engineer helps you get the right fuel and PSI into your car by looking at your data. Basically like the Session Info Page but local-only",
-      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
+      "title": "Race Engineer + Remote pits",
+      "subtitle": "The most important data for you and your teammates",
+      "description": "Optimize your race strategy with our Race Engineer. Get real-time fuel and PSI recommendations and let your teammates set up the perfect pitstop for you.",
+      "modalText": "The Race Engineer feature in ACC DRIVE is a sophisticated tool designed to optimize your racing performance through data analysis. </br> </br>Key functionalities include: </br>Live Data Analysis: Monitors live PSI and brake temperatures, offering a dynamic overview of your car's performance. </br>Lap-Specific Data: Provides detailed data for each lap, including average pressures, pressure loss, and brake temperatures (minimum, average, maximum). </br>Session Overview: Displays session status, air/track temperatures, grip level, current weather forecast, and other vital statistics. </br>Car Setup Optimization: All of the above datapoints are available for your teammates as well! ACC DRIVE uses them to give you a custom recommendation for your fuel load, and PSI for your next stint. </br> </br>This works hand-in-hand with our revolutionary Remote Pits feature that allows your teammates to finally set up the perfect pitstop for you so that you don't have to mess about and instead can focus on your racing."
     },
     "feature2": {
-      "title": "Telemetry",
-      "subtitle": "Additional Info on your past sessions",
-      "description": "Revel in detailed lap specifics such as time, top- and average-speed, with the additional bonus of TC/ABS intervention stats. Stay on top of your game with active assists and overall stint details showcasing your best lap",
-      "modalText": "This is some very short text"
+      "title": "Full Tyre & Damage App",
+      "subtitle": "Detailed Tyre, Brake and Damage Infos",
+      "description": "Track your tyres and brakes performance accurately. Our app also includes an advanced damage model to keep you informed about your car's condition.",
+      "modalText": "This feature offers a more accurate and comprehensive approach to monitoring tyre and brake performance, as well as vehicle damage, compared to the standard in-game Tyre App.  </br> </br>Key functionalities include: </br>Accurate Tyre and Brake Data: Displays real-time data on tyre pressures (PSI), temperatures, wheelslip, and pressure loss. Pressure loss is visually indicated when it happens, alerting you when you just had a pressure loss. </br>Damage Model: Provides a detailed view of the car's damage (where how much of the damage is and to which extent the suspension is broken). </br>Brake Life and Temperatures: Monitors the remaining life percentage of brakes and their current temperatures, crucial for maintaining optimal performance. </br>Weather Prediction: Includes a new weather app that features a countdown to upcoming weather changes, allowing drivers to prepare and adjust their strategy accordingly."
     },
     "feature3": {
-      "title": "Spotting",
-      "subtitle": "Sharing and recieving your best laps to help each other out",
-      "description": "The Spotting page gives you an easier time keeping an overview of the race. You can see everyone's last and fastest times, how often they pitted, who is currently driving and more",
-      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
+      "title": "Yellow Flags",
+      "subtitle": "Stay ahead of hazards",
+      "description": "Our improved yellow flag system provides warnings way ahead of ACC, giving you crucial seconds to react and avoid collisions.",
+      "modalText": "Imagine a scenario where you're driving up the mountain at Mount Panorama and suddenly, the Yellow Flag feature activates. Instead of guessing whether the incident is ahead or behind you, you can immediately tell that there is a car 150m away from you on the very left side, turned 90° and facing towards the middle. Instead of blasting full ahead and collecting the car on the apex, you simply take a wider line and avoid the incident easily, thanks to ACC DRIVE. </br> </br>Key functionalities include: </br>Incident Awareness: The system alerts drivers to various types of incidents, such as cars significantly slower than expected, cars that have spun, or vehicles exiting the pits. </br>Distance and Position Indicators: It displays the distance to the incident and the position and rotation of the incident car(s). Other widgets might also flash yellow to bring more attention to an incident car ahead. </br>Visual Indicators: The interface uses transparency to indicate the proximity of the incident. Cars closer to the driver are shown with less transparency, while those further away are more transparent. </br>Enhanced Safety and Responsiveness: By providing early warnings, often before the game's own system, drivers can prepare for upcoming hazards more effectively, contributing to overall safety and strategic racing."
     },
     "feature4": {
       "title": "Community",
-      "subtitle": "For a better overview of the race",
-      "description": "Aside from adding each other as friends via ACC DRIVE, comparing yourself to faster times within the community is now possible as well! After completing a valid lap, your telemetry data is uploaded to our secure server.",
-      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
+      "subtitle": "Connect and compete",
+      "description": "Aside from adding each other as friends via ACC DRIVE, comparing yourself to faster times within the community is now possible as well!",
+      "modalText": "Since v4.0 we have the ACC DRIVE Friends System: This feature allows users to add each other as friends, directly send session invites, and manage team assignments instead of doing this via 3rd Party software. </br>Also after completing a lap, your telemetry data is uploaded to a secure server. You can choose to share this data, which then allows you and others to view the quickest laps of the community and compare themselves against your records. </br>Comparing with the best: If you decide to share and receive data you can use the Input HUD (blue reference speed) and the Dashboard (minimum corner speed) to show you how you stack up against the communities best laps."
     },
     "feature5": {
       "title": "Radar",
       "subtitle": "Perfect for close racing",
-      "description": "Shows the position of other cars around you. Can be customized for the distance ahead, behind and next to you.",
-      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
+      "description": "Shows the position and rotation of other cars around you. Can be customized for the distance ahead, behind and next to you.",
+      "modalText": "The Radar HUD feature in ACC DRIVE is a pivotal tool for enhancing situational awareness during virtual races. This feature provides a real-time display of the position of other cars relative to your own, significantly enhancing your ability to respond to dynamic race conditions.  </br> </br>Key functionalities include: </br>Car Position Visualization: The radar graphically shows the position of nearby cars, giving you a clear view of the vehicles around you. This includes cars ahead, behind, and beside your vehicle.  </br>Added detail: A very neat addition is that you can also see the exact rotations of the shown cars making it a lot more predictable than the one in-game! (We've also gone through the trouble of measuring out the size of each car so a Alpine is a lot smaller on your Radar than a Bentley.) </br>Customizable Range: You can customize the radar to display cars within a specific distance range, allowing you to adjust based on your preferences and needs."
     },
     "feature6": {
-      "title": "Yellow Flags",
-      "subtitle": "The most important data at hand",
-      "description": "This is an improvement over the in-game yellow flag system. It adds the distance to an accident, the position and rotation of the crashed car into one system that warns you efficiently before the game does",
-      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
+      "title": "Telemetry",
+      "subtitle": "Analyze your racing sessions",
+      "description": "Get an easy overview of your previous stints. Aside from lap times, we have infos on the session temperature progression, brake life progression, etc.",
+      "modalText": "The Telemetry feature in ACC DRIVE will elevate your racing experience by offering detailed insights into a your performance over the course of a session. This feature captures and stores telemetry data from your driving sessions, providing an in-depth analysis of various aspects: </br>Lap Analysis: View detailed data for each lap, including lap times, tyre pressures/temperatures/pressure-loss, brake temperatures and remaining life. This allows for a comprehensive understanding of how different factors affect lap performance and how you can expect these to behave in longer stints. </br>Session Information: Access information about each driving session, such as the date and time, type of tyres used (dry or wet), the car driven, and the type of session (race, qualifying, or practice). </br>Performance Metrics: The feature displays high and average values for each lap, covering aspects like tyre pressure, brake temperatures, and the total pressure loss over a lap. It also includes lap sector details like time, top speed, and average speed. </br> </br>Driving Assistance Data: Gain insights into the amount of traction control (TC) and anti-lock braking system (ABS) interventions during a lap, as well as which driving assists were active. </br>Stint Overview: Telemetry provides an overview of total stint details, including the best lap, the optimal lap (combining the fastest personal sectors), average pace, and stint-specific details like temperature progression."
     },
     "feature7": {
-      "title": "Full Tyre & Damage App",
-      "subtitle": "All the data about your car you will need",
-      "description": "This feature shows you the actual values based on the performance of your tires/brakes instead of some random values Kunos is presenting. It also features a damage-model when you take damage",
-      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
+      "title": "Spotting",
+      "subtitle": "Enhanced race overview",
+      "description": "The Spotting page gives you an easier time keeping an overview of the race. You can see everyone's last and fastest times, how often they pitted, who is currently driving and more",
+      "modalText": "Imagine a critical phase in an endurance race: Your teams's lead is diminishing, and Team B is steadily catching up. The strategist of your team, using the ACC DRIVE Spotting Page, notices that Team B's last pit stop was significantly shorter, indicating a possible change in strategy. Armed with this insight, you can adjust your strategy, possibly opting for a shorter refueling stop to maintain the lead as they also didn't change tyres.  </br> </br> </br>The Spotting Page serves as a central hub for race oversight, both for racers and engineers, providing a comprehensive view of the race in progress. Key functionalities include: </br>Race Standings and Driver Information: At a glance, users can access pivotal data including current driver names, car numbers, and current race positions. </br>Timing and Performance Metrics: The page displays critical timing information such as the fastest lap times, last lap times, current improvement on the running lap and stint durations, enabling teams to monitor and analyze performance trends. </br> </br>Pit Stop Data: Insight into pit activities is key. The Spotting Page indicates the number of pit stops made by each driver and their current pit status, essential for understanding competitors' strategies. </br> </br>Use-Cases </br>Strategic Decision-Making: For team strategists, the Spotting Page is invaluable. It helps in planning pit stops, observing competitors' strategies, and making real-time decisions based on comprehensive data. </br>Driver Support and Analysis: Drivers can use this tool for post-race analysis to understand their performance relative to others, identify areas of improvement, and develop strategies for future races. </br>Team Coordination: In endurance events where multiple drivers share a car, the Spotting Page ensures seamless coordination, keeping the entire team updated on race progress and driver performance."
     },
     "feature8": {
       "title": "VR Support",
       "subtitle": "ACC DRIVE fully works in VR",
-      "description": "When setting up the App you can decide to always position ACC DRIVE in front to put it infront of all other applications",
-      "modalText": "Introducing the Race Engineer, your personalized in-car data analyst dedicated to optimizing your racing performance. This cutting-edge feature is designed to fine-tune your vehicle's fuel and PSI settings based on real-time data analysis, providing you with a localized and instant advantage on the track Much like the Session Info Page, the Race Engineer delves into the intricacies of your car's performance, but with a distinct focus on fuel and PSI dynamics. By harnessing the power of data analytics, this feature interprets your car's behavior on the track, enabling you to make informed decisions tailored to your specific driving style and racing conditions. The Race Engineer operates exclusively within your vehicle, ensuring that adjustments are made seamlessly and in real-time. This localized functionality allows for a quick response to the ever-changing demands of the race, giving you a competitive edge without the need for external connectivity. Say goodbye to generic settings and hello to a personalized, data-driven approach to racing. The Race Engineer empowers you to optimize your fuel and PSI settings with precision, helping you unleash the full potential of your vehicle and dominate the track with confidence."
+      "description": "Enjoy easy VR integration with ACC DRIVE. Experience your race like never before with our VR-friendly setup.",
+      "modalText": "We know that a lot of racers love to use VR in Sim-Racing to keep up the immersion and actually look at the apexes you want to hit. That's why ACC DRIVE has a VR guide to help you get started with the app. </br> </br>If you're looking to set up ACC DRIVE in VR, please use the guide outlined in our user manual"
     }
   },
   "reviews": {
     "description": {
       "title": {
-        "one": "ACC DRIVE is perfect for ",
+        "one": "ACC DRIVE: A must have ACC App for ",
         "divider": "all",
         "two": " drivers",
-        "subtitle": "Whether you are a beginnner or a pro, ACC DRIVE will push your racing to the next level. Hear from our amazing community how ACC DRIVE helped and improve their driving."
+        "subtitle": "Whether you are a beginnner or a pro, ACC DRIVE will push your racing to the next level. Hear from our amazing community how ACC DRIVE helped and improved their driving."
       }
     },
     "review1": {
-      "name": "Kaiser",
-      "role": "Twitch Streamer",
-      "review": "ACC DRIVE helped me perfecting my pitstops with amazing ease"
+      "name": "Mabix",
+      "role": "YouTube Creator",
+      "review": "Remote Pitstops, Tyre App, Yellow Flag App in ACC DRIVE are a must have for us as a team nowadays!"
     },
     "review2": {
-      "name": "Peach",
-      "role": "E-Sports Driver",
-      "review": "Knowing where incidents happen and where yellow flags are is an amazing advantage when racing"
+      "name": "Agent Engel",
+      "role": "Twitch Streamer",
+      "review": "The additional options offered by ACC Drive are essential for both solo drivers and endurance team races. Here you get a lifetime all-round carefree package for a modest investment."
     },
     "review3": {
-      "name": "Fox",
-      "role": "Youtuber",
-      "review": "Knowing how my tyres are performing at all times gives me great security which in turn improves my performance"
+      "name": "Danilo Magnani",
+      "role": "Community member",
+      "review": "I no longer turn on ACC without ACC DRIVE. Great product, super fair price and I am recommending it to everyone."
     },
     "review4": {
-      "name": "Pixel",
-      "role": "Community Member",
-      "review": "The amazing community helped me out finding the perfect setup for my races"
+      "name": "Marcel Schiro",
+      "role": "eSports Race Engineer",
+      "review": "ACC DRIVE revolutionized our pitstops, allowing me as a race engineer to take care of the drivers part completely and have more data at hand."
     }
   }
 }
