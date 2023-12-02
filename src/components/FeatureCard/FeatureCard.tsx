@@ -15,6 +15,7 @@ import { ReactNode } from "react";
 import classes from "./FeatureCard.module.css";
 import I18n from "../../i18n.js";
 import accdrive1 from "../../media/acc_1.jpg";
+import parse from "html-react-parser";
 
 interface FeatureCardProps {
   featureName: string;
@@ -50,7 +51,7 @@ export function FeatureCard({
         <Space h="md" />
         <Divider />
         <Space h="md" />
-        <Text>{modalText}</Text>
+        <Text>{parse(modalText)}</Text>
         <Divider />
         <Button
           fullWidth
