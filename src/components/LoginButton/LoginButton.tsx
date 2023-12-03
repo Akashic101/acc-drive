@@ -1,11 +1,21 @@
 import classes from "./LoginButton.module.css";
 import { ActionIcon, Center, Container } from "@mantine/core";
 import { IconBrandSteam } from "@tabler/icons-react";
+import axios from "axios";
 
 export default function LoginButton(): React.JSX.Element {
+  const handleSteamLogin = async () => {
+    try {
+      // Redirect the user to the Steam authentication page on your server
+      window.location.href = "http://localhost:8080/auth/steam";
+    } catch (error) {
+      console.error("Error initiating Steam login:", error);
+    }
+  };
+
   return (
     <Center>
-      <a href="home" className={classes.steambutton}>
+      <a href="#" className={classes.steambutton} onClick={handleSteamLogin}>
         <span>Login</span>
         <Container className={classes.icon}>
           <Center>
