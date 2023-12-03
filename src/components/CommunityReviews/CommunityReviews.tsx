@@ -44,7 +44,7 @@ export function CommunityReviews() {
   ];
 
   const items = data.map((item) => (
-    <div className={classes.item}>
+    <div className={classes.item} key={item.title}>
       <Image
         className={classes.communityAvatar}
         radius="xl"

@@ -78,7 +78,7 @@ function App() {
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
 
   const links = featureList.map((feature) => (
-    <Link to="features" onClick={closeDrawer}>
+    <Link to="features" onClick={closeDrawer} key={feature.title}>
       <UnstyledButton className={classes.subLink} key={feature.title}>
         <Group wrap="nowrap" align="flex-start">
           <ThemeIcon size={34} variant="default" radius="md">
