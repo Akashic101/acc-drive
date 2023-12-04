@@ -71,7 +71,7 @@ const featureList = [
   },
 ];
 function App() {
-  const [opened, { toggle }] = useDisclosure();
+  const [opened] = useDisclosure();
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);

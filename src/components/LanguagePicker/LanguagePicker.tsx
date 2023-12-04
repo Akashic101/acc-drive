@@ -3,7 +3,6 @@ import { UnstyledButton, Menu, Group } from "@mantine/core";
 import { IconChevronDown } from "@tabler/icons-react";
 import classes from "./LanguagePicker.module.css";
 import ReactCountryFlag from "react-country-flag";
-import i18n from "../../i18n";
 import { changeLanguage } from "i18next";
 
 const data = [
@@ -21,7 +20,7 @@ export function LanguagePicker() {
     };
 
     handleChangeLanguage();
-  }, [selected.code, i18n]);
+  }, [selected.code]);
 
   const items = data.map((item) => (
     <Menu.Item
