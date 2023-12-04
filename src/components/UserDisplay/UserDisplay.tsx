@@ -6,16 +6,64 @@ import {
   IconUser,
 } from "@tabler/icons-react";
 import { useDisclosure } from "@mantine/hooks";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-interface UserDisplayProps {
-  username: string;
-  icon: string;
+interface UserData {
+  provider: string;
+  _json: {
+    steamid: string;
+    communityvisibilitystate: number;
+    profilestate: number;
+    personaname: string;
+    commentpermission: number;
+    profileurl: string;
+    avatar: string;
+    avatarmedium: string;
+    avatarfull: string;
+    avatarhash: string;
+    personastate: number;
+    realname: string;
+    primaryclanid: string;
+    timecreated: number;
+    personastateflags: number;
+    loccountrycode: string;
+  };
+  id: string;
+  displayName: string;
+  photos: Photo[];
 }
 
-export function UserDisplay({ username, icon }: UserDisplayProps) {
+interface Photo {
+  value: string;
+}
+
+export function UserDisplay() {
+  const [userData, setUserData] = useState<UserData | null>(null);
   const [opened, { toggle }] = useDisclosure(false);
   const [userMenuOpened, setUserMenuOpened] = useState(false);
+
+
+  useEffect(() => {
+    // Check if 'userData' is stored in session storage
+    const storedUserDataString = sessionStorage.getItem('userData');
+
+    if (storedUserDataString) {
+      // If found, parse and set the stored userData
+      const storedUserData: UserData = JSON.parse(storedUserDataString);
+      setUserData(storedUserData);
+    } else {
+      // Handle the case where userData is not found in session storage
+      console.log('User data not found in session storage.');
+    }
+  }, []);
+
+  const handleLogout = () => {
+    // Clear 'userData' from session storage
+    sessionStorage.removeItem('userData');
+
+    // Reset the component state
+    setUserData(null);
+  };
 
   return (
     <Menu
@@ -29,9 +77,9 @@ export function UserDisplay({ username, icon }: UserDisplayProps) {
       <Menu.Target>
         <UnstyledButton>
           <Group gap={7}>
-            <Avatar src={icon} radius="xl" size={20} />
+            <Avatar src={userData?.photos[0].value} radius="xl" size={20} />
             <Text fw={500} size="sm" lh={1} mr={3}>
-              {username}
+              {userData?.displayName}
             </Text>
             <IconChevronDown
               style={{ width: rem(12), height: rem(12) }}
@@ -52,7 +100,7 @@ export function UserDisplay({ username, icon }: UserDisplayProps) {
         >
           Account
         </Menu.Item>
-        <Menu.Item
+        <Menu.Item onClick={handleLogout}
           color="red"
           leftSection={
             <IconLogout

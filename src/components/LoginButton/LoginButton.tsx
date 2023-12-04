@@ -47,27 +47,36 @@ export default function LoginButton(): React.JSX.Element {
   };
 
   useEffect(() => {
-    // Get the URL search parameters
-    const params = queryString.parse(window.location.search);
+    // Check if 'userData' is stored in session storage
+    const storedUserDataString = sessionStorage.getItem('userData');
 
-    // Check if 'userData' parameter exists
-    if ('userData' in params) {
-      // Extract and parse the 'userData' parameter
-      const userDataString = params.userData as string;
-      const userData = JSON.parse(decodeURIComponent(userDataString));
-      setUserData(userData);
-
-      // Print the parsed userData
-      console.log(userData.photos[0].value);
+    if (storedUserDataString) {
+      // If found, parse and set the stored userData
+      const storedUserData: UserData = JSON.parse(storedUserDataString);
+      setUserData(storedUserData);
     } else {
-      console.log('userData parameter not found in the URL');
+      // If not found, get the URL search parameters
+      const params = queryString.parse(window.location.search);
+
+      // Check if 'userData' parameter exists
+      if ('userData' in params) {
+        // Extract and parse the 'userData' parameter
+        const userDataString = params.userData as string;
+        const parsedUserData: UserData = JSON.parse(decodeURIComponent(userDataString));
+
+        // Set the parsed userData in the component state
+        setUserData(parsedUserData);
+
+        // Save the parsed userData to session storage
+        sessionStorage.setItem('userData', JSON.stringify(parsedUserData));
+      }
     }
   }, []);
 
   return (
     <Center>
-       {userData ? (
-        <UserDisplay username={userData.displayName} icon={userData.photos[0].value}/>
+       {sessionStorage.getItem('userData') ? (
+        <UserDisplay/>
       ) : (
       <a href="#" className={classes.steambutton} onClick={handleSteamLogin}>
         <span>Login</span>
