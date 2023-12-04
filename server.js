@@ -53,23 +53,15 @@ app.get(
   "/auth/steam/return",
   passport.authenticate("steam", { failureRedirect: "/" }),
   (req, res) => {
-    // Successful authentication, redirect to the previous page or default to "/"
-    const redirectUrl = req.session.returnTo || "/";
-    delete req.session.returnTo;
-
-    // Access user data from req.user
+    // Successful authentication, redirect to the frontend with JSON data in query parameters
+    const redirectUrl = "http://localhost:3000"; // Change this to your frontend URL
     const userData = req.user;
-    console.log("User Data:", userData);
-
-    // Send user data to the client
-    res.json({ success: true, userData });
-
-    // Do NOT add the redirect response here
-    // const frontendPort = process.env.REACT_APP_FRONTEND_PORT || 3000;
-    // const finalRedirectUrl = `http://localhost:${frontendPort}${redirectUrl}`;
-    // res.redirect(finalRedirectUrl);
+    const redirectWithParams = `${redirectUrl}?success=true&userData=${encodeURIComponent(JSON.stringify(userData))}`;
+    
+    res.redirect(redirectWithParams);
   }
 );
+
 
 app.get("/ping", function (req, res) {
   return res.send("pong");
