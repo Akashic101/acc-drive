@@ -3,6 +3,7 @@ import { ActionIcon, Center, Container } from "@mantine/core";
 import { IconBrandSteam } from "@tabler/icons-react";
 import queryString from 'query-string';
 import { useEffect, useState } from "react";
+import { UserDisplay } from "../UserDisplay/UserDisplay";
 
 interface UserData {
   provider: string;
@@ -26,12 +27,15 @@ interface UserData {
   };
   id: string;
   displayName: string;
-  photos: Array<{ value: string }>;
+  photos: Photo[];
+}
+
+interface Photo {
+  value: string;
 }
 
 
 export default function LoginButton(): React.JSX.Element {
-  const [loggedIn, setLoggedIn] = useState(false)
   const [userData, setUserData] = useState<UserData>()
   const handleSteamLogin = async () => {
     try {
@@ -51,14 +55,10 @@ export default function LoginButton(): React.JSX.Element {
       // Extract and parse the 'userData' parameter
       const userDataString = params.userData as string;
       const userData = JSON.parse(decodeURIComponent(userDataString));
-      setLoggedIn(true)
       setUserData(userData);
 
       // Print the parsed userData
-      console.log(userData);
-
-      // Now you can use 'userData' in your component as needed
-      // For example, you can set it in the component state or display it in the render method
+      console.log(userData.photos[0].value);
     } else {
       console.log('userData parameter not found in the URL');
     }
@@ -67,9 +67,7 @@ export default function LoginButton(): React.JSX.Element {
   return (
     <Center>
        {userData ? (
-        <div>
-          <p>{userData.displayName}!</p>
-        </div>
+        <UserDisplay username={userData.displayName} icon={userData.photos[0].value}/>
       ) : (
       <a href="#" className={classes.steambutton} onClick={handleSteamLogin}>
         <span>Login</span>
@@ -84,8 +82,7 @@ export default function LoginButton(): React.JSX.Element {
             </ActionIcon>
           </Center>
         </Container>
-      </a>
-      )}
+      </a>)}
     </Center>
   );
 }
