@@ -3,7 +3,6 @@ import {
   Title,
   Text,
   Button,
-  Image,
   Center,
   SimpleGrid,
   Space,
@@ -45,7 +44,7 @@ export function CTABanner() {
           </Container>
         </Center>
         <Center>
-          <img className={classes.pitstopGif} src={pitstop} />
+          <img alt="gif of the pitstop animation" className={classes.pitstopGif} src={pitstop} />
         </Center>
       </SimpleGrid>
     </Center>

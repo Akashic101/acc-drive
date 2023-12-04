@@ -3,10 +3,8 @@ import {
   Text,
   SegmentedControl,
   Container,
-  SegmentedControlItem,
   Center,
 } from "@mantine/core";
-import { IconChevronDown } from "@tabler/icons-react";
 import ReactCountryFlag from "react-country-flag";
 import i18n from "../../i18n";
 import { changeLanguage } from "i18next";

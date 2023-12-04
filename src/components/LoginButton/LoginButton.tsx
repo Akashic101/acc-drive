@@ -1,7 +1,6 @@
 import classes from "./LoginButton.module.css";
 import { ActionIcon, Center, Container } from "@mantine/core";
 import { IconBrandSteam } from "@tabler/icons-react";
-import axios from "axios";
 
 export default function LoginButton(): React.JSX.Element {
   const handleSteamLogin = async () => {

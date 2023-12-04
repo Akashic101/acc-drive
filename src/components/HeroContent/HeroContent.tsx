@@ -1,5 +1,4 @@
 import {
-  BackgroundImage,
   Button,
   CheckIcon,
   Container,

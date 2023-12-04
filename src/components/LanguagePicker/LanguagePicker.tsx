@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { UnstyledButton, Menu, Image, Group } from "@mantine/core";
+import { UnstyledButton, Menu, Group } from "@mantine/core";
 import { IconChevronDown } from "@tabler/icons-react";
 import classes from "./LanguagePicker.module.css";
 import ReactCountryFlag from "react-country-flag";

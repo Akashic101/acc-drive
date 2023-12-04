@@ -8,7 +8,6 @@ import {
   Anchor,
   SimpleGrid,
   Divider,
-  Stack,
 } from "@mantine/core";
 import {
   IconBrandYoutube,
