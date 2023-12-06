@@ -104,7 +104,7 @@ function App() {
       <AppShell
         header={{ height: 60 }}
         navbar={{
-          width: 300,
+          width: "100%",
           breakpoint: "sm",
           collapsed: { desktop: true, mobile: !opened },
         }}
@@ -119,7 +119,7 @@ function App() {
               onClick={toggleDrawer}
               hiddenFrom="sm"
             />
-            <Group ml="xl" gap={10} visibleFrom="sm">
+            <Group  gap={10} visibleFrom="sm">
               <Link to="home">
                 <UnstyledButton>Home</UnstyledButton>
               </Link>
