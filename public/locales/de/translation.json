@@ -21,20 +21,20 @@
       "checkout": "Bezahlen mit Paypal"
     },
     "video": {
-      "title": "Sieh ACC DRIVE in Aktion!",
+      "title": "ACC DRIVE in Aktion!",
       "subtitle": "Entdecke die Top Funktionen von ACC DRIVE mit Mabix"
     }
   },
   "features": {
     "feature1": {
-      "title": "Renn-Ingenieur + Remote-Boxenstopps",
-      "subtitle": "Die wichtigsten Daten für dich und deine Teamkollegen",
+      "title": "Renn-Ingenieur + Remote-Pits",
+      "subtitle": "Daten für dich und deine Teamkollegen",
       "description": "Optimiere deine Rennstrategie mit unserem Renn-Ingenieur. Erhalte Echtzeit-Empfehlungen für Kraftstoff und Reifendruck und lass deine Teamkollegen den perfekten Boxenstopp für dich einstellen.",
       "modalText": "Die Renn-Ingenieur-Funktion in ACC DRIVE ist ein ausgeklügeltes Werkzeug, entwickelt, um dein Rennergebnis durch Datenanalyse zu optimieren.<br><br>Hauptfunktionen beinhalten:<br>Live-Datenanalyse: Überwacht live Reifendruck und Bremsentemperaturen und bietet eine dynamische Schadens-Übersicht deines Autos.<br>Rundenspezifische Daten: Stellt detaillierte Daten für jede Runde bereit, einschließlich Durchschnittsdruck, Druckverlust und Bremsentemperaturen (Minimum, Durchschnitt, Maximum).<br>Sitzungsübersicht: Zeigt den Status der Sitzung, Luft-/Streckentemperaturen, Grip-Niveau, aktuelle Wettervorhersage und andere wichtige Statistiken an.<br>Optimierung der Fahrzeugeinstellungen: All diese Datenpunkte sind auch für deine Teamkollegen verfügbar! ACC DRIVE nutzt sie, um dir eine individuelle Empfehlung für deine Fuel Load und deinen Reifendruck für deinen nächsten Stint zu geben.<br><br>Dies funktioniert Hand in Hand mit unserer revolutionären Remote-Boxenstopp-Funktion, die es deinen Teamkollegen endlich ermöglicht, den perfekten Boxenstopp für dich einzurichten, sodass du dich nicht herumschlagen musst und stattdessen auf dein Rennen konzentrieren kannst."
     },
     "feature2": {
-      "title": "Vollständige Reifen- & Schadens-App",
-      "subtitle": "Detaillierte Infos zu Reifen, Bremsen und Schäden",
+      "title": "Vollständige Reifen/Schaden-App",
+      "subtitle": "Reifen, Bremsen und Schaden im Detail",
       "description": "Verfolge die Leistung deiner Reifen und Bremsen genau. Unsere App beinhaltet auch ein fortschrittliches Schadensmodell, um dich über den Zustand deines Autos zu informieren.",
       "modalText": "Diese Funktion bietet einen genaueren und umfassenderen Ansatz zur Überwachung der Leistung von Reifen und Bremsen sowie Fahrzeugschäden im Vergleich zur standardmäßigen In-Game-Reifen-App.<br><br>Hauptfunktionen beinhalten:<br>Genaue Reifen- und Bremsdaten: Zeigt Echtzeitdaten zu Reifendruck (PSI), -temperaturen, Wheelslip und Druckverlust an. Druckverlust wird auch nochmal kurz extra angezeigt, damit du erkennen kannst, dass du gerade einen hattest.<br>Schadensmodell: Stellt eine detaillierte Ansicht des Fahrzeugschadens bereit (wo, wie viel Schaden ist und inwieweit die Aufhängung beschädigt ist).<br>Bremsenlebensdauer und -temperaturen: Überwacht die verbleibende Lebensdauer der Bremsen in Prozent und ihre aktuellen Temperaturen.<br>Wettervorhersage: Beinhaltet eine neue Wetter-App, die einen Countdown zu bevorstehenden Wetteränderungen anzeigt und es so ermöglicht, sich darauf vorzubereiten und die Strategie entsprechend anzupassen."
     },

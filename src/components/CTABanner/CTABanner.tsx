@@ -15,12 +15,13 @@ export function CTABanner() {
   const { t } = useTranslation("translations");
   return (
     <Center>
-      <SimpleGrid cols={{ base: 1, xs: 2 }} spacing={250}>
+      <SimpleGrid cols={{ base: 1, xs: 2 }} spacing={250} verticalSpacing={60}>
         <Center>
           <Container className={classes.wrapper}>
             <Title className={classes.title}>
               <Text
                 fs="italic"
+                fw={900}
                 inherit
                 variant="gradient"
                 gradient={{ from: "green", to: "#85d46c" }}

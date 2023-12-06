@@ -4,6 +4,7 @@ import {
   Container,
   Flex,
   Group,
+  Space,
   Text,
   ThemeIcon,
   Title,
@@ -40,12 +41,13 @@ export function HeroContent() {
         <Text className={classes.description} mt={30}>
           <Trans i18nKey="title.advertisement-text" />
         </Text>
+        <Space h={"xl"}/>
         <Group>
           <Link to={"features"}>
             <Button
               variant="default"
               size="lg"
-              mt={40}
+              
               className={classes.control}
             >
               Features
@@ -55,7 +57,7 @@ export function HeroContent() {
             <Button
               variant="default"
               size="lg"
-              mt={40}
+              
               className={classes.control}
             >
               Community
@@ -67,7 +69,7 @@ export function HeroContent() {
             gradient={{ from: "green", to: "#66ae3f" }}
             size="lg"
             className={classes.control}
-            mt={40}
+            
             onClick={() =>
               notifications.show({
                 title: "Feature not implemented",

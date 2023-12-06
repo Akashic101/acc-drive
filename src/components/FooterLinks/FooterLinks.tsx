@@ -13,6 +13,7 @@ import {
   IconBrandYoutube,
   IconBrandInstagram,
   IconBrandDiscord,
+  IconBrandTwitch,
 } from "@tabler/icons-react";
 import Logo from "../Logo/Logo";
 import classes from "./FooterLinks.module.css";
@@ -106,7 +107,7 @@ export function FooterLinks() {
             <div className={classes.logo}>
               <Logo />
               <Text size="xs" c="dimmed" className={classes.description}>
-                Supercharge your driving
+                THE ULTIMATE ACC APP
               </Text>
             </div>
           </Container>
@@ -132,24 +133,30 @@ export function FooterLinks() {
             justify="flex-end"
             wrap="nowrap"
           >
+            <Anchor href="https://dsc.gg/ACCDRIVE" target="_blank">
             <ActionIcon size="lg" color="gray" variant="subtle">
               <IconBrandDiscord
                 style={{ width: rem(18), height: rem(18) }}
                 stroke={1.5}
               />
             </ActionIcon>
+            </Anchor>
+            <Anchor href="https://www.youtube.com/channel/UCbvxTXYQOvln58MpErXZZIA" target="_blank">
             <ActionIcon size="lg" color="gray" variant="subtle">
               <IconBrandYoutube
                 style={{ width: rem(18), height: rem(18) }}
                 stroke={1.5}
               />
             </ActionIcon>
+            </Anchor>
+            <Anchor href="https://www.twitch.tv/discostofftv" target="_blank">
             <ActionIcon size="lg" color="gray" variant="subtle">
-              <IconBrandInstagram
+              <IconBrandTwitch
                 style={{ width: rem(18), height: rem(18) }}
                 stroke={1.5}
               />
             </ActionIcon>
+            </Anchor>
           </Group>
         </Container>
       </footer>

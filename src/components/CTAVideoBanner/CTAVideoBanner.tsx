@@ -25,6 +25,7 @@ export function CTAVideoBanner() {
           <Title className={classes.title}>
             <Text
               fs={"italic"}
+              fw={900}
               inherit
               variant="gradient"
               gradient={{ from: "green", to: "#85d46c" }}
@@ -40,7 +41,7 @@ export function CTAVideoBanner() {
           <YouTube
             className="youtubePlayer"
             opts={opts}
-            videoId={"dQw4w9WgXcQ"}
+            videoId={"qMaQL1B0vaQ"}
           />
         </Center>
       </SimpleGrid>
