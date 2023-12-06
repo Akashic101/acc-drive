@@ -7,10 +7,11 @@ import {
   Image,
 } from "@mantine/core";
 import classes from "./CommunityReviews.module.css";
-import face1 from "../../media/face_1.jpg";
-import face2 from "../../media/face_2.jpg";
-import face3 from "../../media/face_3.jpg";
-import face4 from "../../media/face_4.jpg";
+import danilo from "../../media/danilo-min.png";
+import engel from "../../media/engel-min.png";
+import mabix from "../../media/mabix-min.png";
+import schiro from "../../media/schiro-min.png";
+
 import I18n from "../../i18n.js";
 import { useTranslation } from "react-i18next";
 
@@ -18,25 +19,25 @@ export function CommunityReviews() {
   const { t } = useTranslation("translations");
   const data = [
     {
-      image: face1,
+      image: mabix,
       title: I18n.t("reviews.review1.name"),
       subtitle: I18n.t("reviews.review1.role"),
       description: I18n.t("reviews.review1.review"),
     },
     {
-      image: face2,
+      image: engel,
       title: I18n.t("reviews.review2.name"),
       subtitle: I18n.t("reviews.review2.role"),
       description: I18n.t("reviews.review2.review"),
     },
     {
-      image: face3,
+      image: danilo,
       title: I18n.t("reviews.review3.name"),
       subtitle: I18n.t("reviews.review3.role"),
       description: I18n.t("reviews.review3.review"),
     },
     {
-      image: face4,
+      image: schiro,
       title: I18n.t("reviews.review4.name"),
       subtitle: I18n.t("reviews.review4.role"),
       description: I18n.t("reviews.review4.review"),
