@@ -133,7 +133,7 @@ function App() {
                 <HoverCard.Target>
                   <a>
                     <Center inline>
-                      <Box component="span" mr={5}>
+                      <Box component="span">
                         Features
                       </Box>
                       <IconChevronDown
@@ -161,7 +161,7 @@ function App() {
               </Link>
             </Group>
             <Group visibleFrom="sm">
-              <LanguagePicker />
+              <LanguagePicker/>
               <LoginButton />
             </Group>
           </Group>
@@ -185,11 +185,12 @@ function App() {
               <Center inline>
                 <Box component="span" mr={5}>
                   Features
-                </Box>
-                <IconChevronDown
+                  <IconChevronDown
                   style={{ width: rem(16), height: rem(16) }}
                   color={"#66ae3f"}
                 />
+                </Box>
+                
               </Center>
             </UnstyledButton>
             <Collapse in={linksOpened}>{links}</Collapse>
