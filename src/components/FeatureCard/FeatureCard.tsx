@@ -14,7 +14,7 @@ import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 import { ReactNode } from "react";
 import classes from "./FeatureCard.module.css";
 import I18n from "../../i18n.js";
-import accdrive1 from "../../media/acc_1.jpg";
+import accdrive1 from "../../media/hoechstleistung-min.png";
 import parse from "html-react-parser";
 
 interface FeatureCardProps {

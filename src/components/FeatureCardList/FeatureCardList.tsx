@@ -10,7 +10,7 @@ import {
   IconTournament,
 } from "@tabler/icons-react";
 import { FeatureCard } from "../FeatureCard/FeatureCard";
-import accDrive1 from "../../media/acc_1.jpg";
+import accDrive1 from "../../media/hoechstleistung-min.png";
 import I18n from "../../i18n.js";
 import { useTranslation } from "react-i18next";
 
